@@ -1,9 +1,10 @@
 import React from 'react'
+import Footer from '../components/common/Footer'
 
 const Home = () => {
   return (
     <>
-    <p className='text-5xl to-red-500'>hello </p>
+    <Footer/>
     </>
   )
 }
