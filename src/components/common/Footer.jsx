@@ -1,10 +1,10 @@
 import React from "react";
-import logo from "../../assets/images/webp/footer-logo.webp";
-import linkedin from "../../assets/images/svg/linked-in.svg";
-import instagram from "../../assets/images/svg/instagram.svg";
-import facebook from "../../assets/images/svg/facebook.svg";
-import twitter from "../../assets/images/svg/twitter.svg";
-import vector from "../../assets/images/webp/footer-vec.webp";
+import logo from "../../assets/images/home/webp/footer-logo.webp";
+import linkedin from "../../assets/images/home/svg/linked-in.svg";
+import instagram from "../../assets/images/home/svg/instagram.svg";
+import facebook from "../../assets/images/home/svg/facebook.svg";
+import twitter from "../../assets/images/home/svg/twitter.svg";
+import vector from "../../assets/images/home/webp/footer-vec.webp";
 const Footer = () => {
   return (
     <div className="max-w-[1140px] relative mx-auto px-3">
