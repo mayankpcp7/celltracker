@@ -7,6 +7,7 @@ function App() {
     <>
       <div className="overflow-hidden">
         <Home />
+        <Landing/>
       </div>
     </>
   );
