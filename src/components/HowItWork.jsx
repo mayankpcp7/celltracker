@@ -9,7 +9,7 @@ const HowItWork = () => {
                 
                 <div className="mt-[98px] mb-[34px] md:mb-14">
                     <BlueHeading headingText="How it" boldText="works" />
-                    <BlueHeading SubPara="Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi sit elit rhoncus vestibulum fames libero id." />
+                    <BlueHeading SubPera="Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi sit elit rhoncus vestibulum fames libero id." />
 
                 </div>
                <div className="flex flex-wrap justify-center mb-[152px] sm:mb-[157px]  px-9 xl:px-0">

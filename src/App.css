@@ -11,3 +11,7 @@
 .visa-input::placeholder {
   color: #03045e;
 }
+.gradient-card:hover .gradient-svg-hover rect {
+  fill-opacity: 1 !important;
+  fill: white;
+}
