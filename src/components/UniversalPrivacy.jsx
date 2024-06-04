@@ -10,7 +10,7 @@ const UniversalPrivacy = () => {
           <CommonHeading SubPara="Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi sit elit rhoncus vestibulum fames libero id." />
 
   
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[18px] sm:gap-6 mt-[34px] sm:mt-[56px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[18px] sm:gap-4 md:gap-6 lg:gap-4 xl:gap-6 mt-[34px] sm:mt-[56px]">
         {universalData.map((card) => (
           <div
             key={card.id}
