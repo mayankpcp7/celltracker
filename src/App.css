@@ -2,3 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.universal-card:hover .universal-svg-hover rect{
+    fill-opacity: 1 !important;
+    fill: white;
+}
