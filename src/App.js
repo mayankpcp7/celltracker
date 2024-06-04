@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div className="overflow-hidden">
-        <Home />
+        {/* <Home /> */}
         <Landing/>
       </div>
     </>

@@ -4,15 +4,16 @@ import UniversalPrivacy from "../components/UniversalPrivacy";
 import FindAnyone from "../components/FindAnyone";
 import Footer from "../components/common/Footer";
 import HowItWork from "../components/HowItWork";
+import LandingHome from "../components/LandingHome";
 
 const Landing = () => {
   return (
     <>
-      <LandingHero />
+      {/* <LandingHome /> */}
       <UniversalPrivacy />
+       <FindAnyone />
       <HowItWork/>
-      {/* <FindAnyone /> */}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
