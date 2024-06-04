@@ -14,7 +14,8 @@ export const CompatibleIcon = () => {
         </svg>
         
     );
-  };
+};
+  //--------------AllNetworksIcon-------------------
   export const AllNetworksIcon = () => {
     return (
         <svg className="universal-svg-hover w-[61px] h-[57px] sm:w-[75px] sm:h-[70px]  transition-all duration-300 ease-in-out" width="75" height="70" viewBox="0 0 75 70" fill="none" xmlns="http://www.w3.org/2000/svg">

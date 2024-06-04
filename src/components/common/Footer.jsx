@@ -6,13 +6,18 @@ import facebook from "../../assets/images/home/svg/facebook.svg";
 import twitter from "../../assets/images/home/svg/twitter.svg";
 import vector from "../../assets/images/home/webp/footer-vec.webp";
 const Footer = () => {
+  const getCurrentYear = () => new Date().getFullYear();
   return (
-    <div className="max-w-[1140px] relative mx-auto px-3">
-      <img className="max-w-[140px] absolute end-[-12%] bottom-[5%]" src={vector} alt="vector" />
-      <div className="flex justify-between items-center">
+    <div className="max-w-[1140px] relative mx-auto px-3 md:mt-20 mt-[58px] sm:mt-[64px] lg:mt-[102px]">
+      <img
+        className="max-w-[41px] sm:max-w-[106px] end-[-1%] bottom-[25%] absolute md:end-[-13%] md:bottom-[10%]"
+        src={vector}
+        alt="vector"
+      />
+      <div className="flex justify-between md:flex-row flex-col gap-8 items-center">
         <a href="#">
           <img
-            className="max-w-[200px] lg:max-w-[259px] w-full"
+            className="max-w-[211px]  lg:max-w-[259px] w-full"
             src={logo}
             alt="logo"
           />
@@ -45,40 +50,40 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="flex items-center gap-[18px]">
+        <div className="flex items-center mt-1 sm:mt-0 gap-4 md:gap-[18px]">
           <a href="https://www.linkedin.com/feed/">
             <img
-              className="lg:max-w-[40px] max-w-[35px] hover:scale-110 duration-300"
+              className="lg:max-w-[40px] max-w-[28px] sm:max-w-[30px] hover:scale-110 duration-300"
               src={linkedin}
               alt="linked in"
             />
           </a>
-          <a href="https://www.linkedin.com/feed/">
+          <a href="https://www.instagram.com">
             <img
-              className="lg:max-w-[40px] max-w-[35px] hover:scale-110 duration-300"
+              className="lg:max-w-[40px] max-w-[28px] sm:max-w-[30px] hover:scale-110 duration-300"
               src={instagram}
               alt="instagram"
             />
           </a>
-          <a href="https://www.linkedin.com/feed/">
+          <a href="https://www.facebook.com/">
             <img
-              className="lg:max-w-[40px] max-w-[35px] hover:scale-110 duration-300"
+              className="lg:max-w-[40px] max-w-[28px] sm:max-w-[30px] hover:scale-110 duration-300"
               src={facebook}
               alt="facebook"
             />
           </a>
-          <a href="https://www.linkedin.com/feed/">
+          <a href="https://x.com/?lang=en">
             <img
-              className="lg:max-w-[40px] max-w-[35px] hover:scale-110 duration-300"
+              className="lg:max-w-[40px] max-w-[25px] sm:max-w-[30px] hover:scale-110 duration-300"
               src={twitter}
               alt="twitter"
             />
           </a>
         </div>
       </div>
-      <span className="w-full h-[1px] flex bg-darkBlue mt-12"></span>
-      <p className="text-center py-4 leading-md text-lightBlack font-normal font-mukta">
-        © 2024 Cell Tracker. All Rights Reserved.
+      <span className="w-full h-[1px] flex bg-darkBlue mt-[58px] md:mt-12"></span>
+      <p className="text-center pb-5 pt-[18px] sm:py-4 leading-md md:text-base text-xs sm:text-sm text-lightBlack font-normal font-mukta">
+        © {getCurrentYear()} Cell Tracker. All Rights Reserved.
       </p>
     </div>
   );

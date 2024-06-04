@@ -1,5 +1,5 @@
 import React from "react";
-import CommonHeading from "./common/CommonHeading";
+import { BlueHeading } from "./common/CommonHeading";
 import { universalData } from "./common/Helper";
 
 const UniversalPrivacy = () => {
@@ -7,7 +7,7 @@ const UniversalPrivacy = () => {
     <div className="max-w-[1164px] mx-auto px-6 sm:px-3">
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-[28px] sm:text-5xl text-darkBlue leading-full text-center font-light font-mukta">
-          <CommonHeading headingText="Universal" boldText="Privacy" />
+         <BlueHeading />
         </h2>
         <p className="mt-2 text-base leading-md max-w-[472px] text-center font-normal font-mukta text-lightBlack">
           Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi sit

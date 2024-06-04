@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{html,js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     extend: {
       fontFamily: {
@@ -24,10 +22,17 @@ module.exports = {
         lg: "166%",
       },
       backgroundImage: {
-        'linear-blue': 'linear-gradient(7.95deg, #00B5D8 -3.4%, #000080 114.66%)',
-        'landing-hero': "url('assets/images/landing/webp/landing-hero-bg.webp')",
+        "linear-blue":
+          "linear-gradient(7.95deg, #00B5D8 -3.4%, #000080 114.66%)",
+        "landing-hero":
+          "url('assets/images/landing/webp/landing-hero-bg.webp')",
+        "blue-gradient":
+          "url('assets/images/home/webp/find-phone-bg.webp')",
       },
-  
+      boxShadow: {
+        "find-shadow":"0px 0px 9.5px 0px #00000014",
+
+      }
     },
   },
   plugins: [],

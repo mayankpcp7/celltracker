@@ -1,12 +1,14 @@
-import React from 'react'
-import Footer from '../components/common/Footer'
+import React from "react";
+import Footer from "../components/common/Footer";
+import FindPhone from "../components/FindPhone";
 
 const Home = () => {
   return (
     <>
-    <Footer/>
+      <FindPhone />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
