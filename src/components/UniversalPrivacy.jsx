@@ -16,7 +16,7 @@ const UniversalPrivacy = () => {
             key={card.id}
             className={`flex justify-center ${card.justifyClass}`}
           >
-            <div className="border-[1px] pt-6 sm:pt-7 universal-card transition-all duration-300 ease-in-out group hover:bg-linear-blue rounded-[4px] w-full sm:max-w-[267px] min-h-[187px] sm:min-h-[261px] border-offGrey">
+            <div className="border-[1px] pt-6 sm:pt-7 gradient-card transition-all duration-300 ease-in-out group hover:bg-linear-blue rounded-[4px] w-full sm:max-w-[267px] min-h-[187px] sm:min-h-[261px] border-offGrey">
               <span>{card.icon}</span>
               <div className="ps-3 pe-[14px] mt-[10px] mb-6 sm:my-[14px]">
                 <h3 className="text-xl sm:text-2xl font-normal font-mukta transition-all duration-200 ease-in-out group-hover:text-white leading-sm">

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import DoubleMobile from "../assets/landing/webp/double-mobile-location-tarcking.png";
-import { Logo, Logo2 } from "./common/Icons";
+import { IndiaFlagIcon, LocationLogo, LocationVector, Logo, Logo2 } from "./common/Icons";
 
 
 const LandingHome = () => {
@@ -56,7 +56,7 @@ const LandingHome = () => {
               Log In
             </button>
           </ul>
-          <button className="font-mukta text-dark-blue max-md:hidden text-base leading-[26.59px] font-semibold bg-white py-[14px] md:py-4 px-7 rounded-[4px]">
+          <button className="font-mukta text-dark-blue hover:bg-linear-blue hover:text-white transition-all duration-300 ease-in-out max-md:hidden text-base leading-[26.59px] font-semibold bg-white py-[14px] md:py-4 px-7 rounded-[4px]">
             Log In
           </button>
           <button onClick={showNav} className="md:hidden relative z-[4]">
@@ -94,7 +94,7 @@ const LandingHome = () => {
             <div className=" max-lg:mx-auto bg-white rounded shadow-inputNumber flex items-center justify-between ps-2.5 max-w-[448px] mt-6">
               <div className=" flex items-center gap-[7px] ">
                 <span>
-               
+                 <IndiaFlagIcon/>
                 </span>
                 <select
                   className="outline-none text-sm leading-[23px] font-Mukta md:leading-[26px] md:text-base"
@@ -118,9 +118,9 @@ const LandingHome = () => {
                   </option>
                 </select>
               </div>
-              <input type="number" className="outline-none w-[35%] sm:w-1/2" />
-              <button className=" bg-darkBlue rounded font-semibold text-sm font-mukta md:text-base group text-white leading-[166%] py-[13.5px] px-[22.2px] flex items-center gap-1 hover:text-darkBlue hover:bg-white duration-300 relative border-transparent border-2  hover:border-dark-blue z-[1] after:absolute after:h-full after:w-1 after:top-0 after:skew-x-12 after:blur-[3px] overflow-hidden after:left-[-20%] after:bg-dark-blue ">
-              
+              <input type="tell" className="outline-none w-[35%] sm:w-1/2" />
+              <button className=" bg-darkBlue -me-[1px] rounded font-semibold text-sm font-mukta md:text-base group text-white leading-[166%] py-[13.5px] px-[22.2px] flex items-center gap-1 hover:bg-linear-blue duration-300 relative border-transparent border-2  hover:border-dark-blue z-[1] after:absolute after:h-full after:w-1 after:top-0 after:skew-x-12 after:blur-[3px] overflow-hidden after:left-[-20%] after:bg-dark-blue ">
+                <LocationVector/>
                 Locate
               </button>
             </div>
@@ -132,19 +132,19 @@ const LandingHome = () => {
                 className="xl:min-w-[600px]  max-md:h-[321px] w-full xl:h-[599px]"
                 alt="phoneHeader"
               />
-              <div className=" absolute z-[2] -bottom-4 md:bottom-[80px] right-0 xl:right-[-42px] inline-block bg-light-sky-gradient rounded-xl shadow-[0px_9px_13.9px_0_#0000001C]">
+              <div className=" absolute z-[2] -bottom-4 md:bottom-[80px] h-[165px] sm:h-[189px] right-0 xl:right-[-42px] inline-block bg-light-sky-gradient rounded-xl shadow-[0px_9px_13.9px_0_#0000001C]">
                 <div className="relative z-[1] md:p-[16px_16px_12px_14px] p-2">
                   <div className="flex items-center gap-[6px] lg:gap-3">
                     <span>
-                     
+                     <LocationLogo/>
                     </span>
-                    <p className="text-lg lg:text-xl z-50 font-mukta relative leading-[30px] lg:leading-[33px] font-normal text-dark-blue">
+                    <p className="text-lg lg:text-xl z-50 font-mukta relative leading-[30px] lg:leading-[33px] font-normal text-darkBlue">
                       Geolocation found!
                     </p>
                   </div>
                   <a
                     href="tel:+44633427390"
-                    className="font-semibold text-xl font-mukta lg:text-2xl leading-[33px] lg:leading-[39px] mt-2"
+                    className="font-semibold text-xl font-mukta text-darkBlue lg:text-2xl leading-[33px] lg:leading-[39px] mt-2"
                   >
                     +44 633 427 390
                   </a>
@@ -155,8 +155,8 @@ const LandingHome = () => {
                   <span className=" sm:mt-3 mt-[14px] font-mukta font-light text-xs sm:text-sm leading-[18px] sm:leading-[21px] text-end block">
                   
                   </span>
-                  <span className="absolute z-[-1] left-0 bottom-3 lg:bottom-[3px]">
-                   
+                  <span className="absolute z-[-1] right-3 sm:right-5 bottom-[-6px]  lg:bottom-[-5px]">
+                     <p className="text-sm text-black font-mukta font-light">June 02,2024   17:34</p>
                   </span>
                 </div>
               </div>

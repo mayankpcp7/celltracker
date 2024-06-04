@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
 
-.universal-card:hover .universal-svg-hover rect{
+.gradient-card:hover .gradient-svg-hover rect{
     fill-opacity: 1 !important;
     fill: white;
 }

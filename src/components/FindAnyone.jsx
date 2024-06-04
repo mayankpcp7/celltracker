@@ -13,13 +13,13 @@ const FindAnyone = () => {
           <BlueHeading SubPera="Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi sit elit rhoncus vestibulum fames libero id." />
     <div className="flex flex-wrap items-center justify-center mt-[31px] sm:mt-14">
       <div className="w-full sm:w-1/2 order-1 mt-[47px] sm:mt-0 sm:order-0  justify-center flex flex-col items-center lg:w-1/3">
-          <div className="max-w-[376px] h-[152px] md:h-[156px] mb-[18px] sm:mb-6 border-[1px] flex items-center border-offGrey rounded-[4px] py-10 md:py-[42.5px] pe-[18px]">
+          <div className="max-w-[376px] gradient-card group hover:bg-linear-blue h-[152px] md:h-[156px] mb-[18px] sm:mb-6 border-[1px] flex items-center border-offGrey rounded-[4px] py-10 md:py-[42.5px] pe-[18px]">
            <span> <PhoneSettingIcon/></span>
-            <h4 className='font-normal text-lg md:text-xl font-mukta ps-[14px]'>Cell Tracker runs on all phones and configurations, of all brands</h4>
+            <h4 className='font-normal text-lg md:text-xl font-mukta ps-[14px] transition-all duration-200 ease-in-out group-hover:text-white'>Cell Tracker runs on all phones and configurations, of all brands</h4>
           </div>
-          <div className="max-w-[376px] h-[152px] md:h-[156px] mb-[18px] sm:mb-6 lg:mb-0 border-[1px] flex items-center border-offGrey rounded-[4px] py-10 md:py-[42.5px] sm:pe-[18px]">
+          <div className="max-w-[376px] gradient-card group hover:bg-linear-blue h-[152px] md:h-[156px] mb-[18px] sm:mb-6 lg:mb-0 border-[1px] flex items-center border-offGrey rounded-[4px] py-10 md:py-[42.5px] sm:pe-[18px]">
            <span> <NotificationIcon/></span>
-            <h4 className='font-normal text-lg md:text-xl font-mukta ps-[14px]'>Customize the message you want the recipient to recieve. Or use the one suggested by default</h4>
+            <h4 className='font-normal text-lg md:text-xl font-mukta ps-[8px] transition-all duration-200 ease-in-out group-hover:text-white'>Customize the message you want the recipient to recieve. Or use the one suggested by default</h4>
           </div>
       </div>
       <div className="w-full sm:w-1/2 order-0 sm:order-1 lg:w-1/3">
@@ -29,19 +29,19 @@ const FindAnyone = () => {
         </div>
         </div>
       <div className="w-full sm:w-1/2 order-2 sm:order-3 justify-center flex flex-col items-center lg:w-1/3">
-          <div className="max-w-[376px] h-[152px] md:h-[156px] mb-[18px] sm:mb-6 border-[1px] flex items-center border-offGrey rounded-[4px] py-10 md:py-[42.5px] pe-[18px]">
+          <div className="max-w-[376px] gradient-card group hover:bg-linear-blue h-[152px] md:h-[156px] mb-[18px] sm:mb-6 border-[1px] flex items-center border-offGrey rounded-[4px] py-10 md:py-[42.5px] pe-[18px]">
            <span> <RealLoactionIcon/></span>
-            <h4 className='font-normal text-lg md:text-xl font-mukta ps-[14px]'>Grab real-time location as precise coordinates</h4>
+            <h4 className='font-normal text-lg md:text-xl font-mukta ps-[14px] transition-all duration-200 ease-in-out group-hover:text-white'>Grab real-time location as precise coordinates</h4>
           </div>
-          <div className="max-w-[376px] h-[152px] md:h-[156px] border-[1px] flex items-center border-offGrey rounded-[4px] py-10 md:py-[42.5px] pe-[18px]">
+          <div className="max-w-[376px] gradient-card group hover:bg-linear-blue h-[152px] md:h-[156px] border-[1px] flex items-center border-offGrey rounded-[4px] py-10 md:py-[42.5px] pe-[18px]">
            <span> <DailingMobileIcon/></span>
-            <h4 className='font-normal text-lg md:text-xl font-mukta ps-[14px]'>Any mobile number in the world can be tracked</h4>
+            <h4 className='font-normal text-lg md:text-xl font-mukta ps-[14px] transition-all duration-200 ease-in-out group-hover:text-white'>Any mobile number in the world can be tracked</h4>
           </div>
       </div>
     <div className="w-full sm:w-1/2 order-3 sm:order-4 justify-center flex flex-col items-center lg:w-1/3">
-    <div className="max-w-[376px] h-[152px] md:h-[156px] sm:ml-4 lg:ml-0 border-[1px] mt-[21px] flex items-center border-offGrey rounded-[4px] py-10 md:py-[42.5px] pe-[18px]">
+    <div className="max-w-[376px] gradient-card group hover:bg-linear-blue h-[152px] md:h-[156px] sm:ml-4 lg:ml-0 border-[1px] mt-[21px] flex items-center border-offGrey rounded-[4px] py-10 md:py-[42.5px] pe-[18px]">
            <span> <InfiniteIcon/></span>
-            <h4 className='font-normal text-lg md:text-xl font-mukta ps-[14px]'>Send unlimited geo-location requests</h4>
+            <h4 className='font-normal text-lg md:text-xl font-mukta ps-[14px] transition-all duration-200 ease-in-out group-hover:text-white'>Send unlimited geo-location requests</h4>
           </div>
     </div>
     </div>

@@ -9,7 +9,7 @@ import LandingHome from "../components/LandingHome";
 const Landing = () => {
   return (
     <>
-      {/* <LandingHome /> */}
+      <LandingHome />
       <UniversalPrivacy />
        <FindAnyone />
       <HowItWork/>
