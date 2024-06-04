@@ -8,6 +8,11 @@ module.exports = {
       fontFamily: {
         mukta: ["Mukta", "sans-serif"],
       },
+      fontSize:{
+        '3xxl':'32px',
+        '4xxl':'40px',
+        '6xxl':'64px',
+      },
       colors: {
         darkBlue: "#03045E",
         lightBlack: "#4D4D4D",

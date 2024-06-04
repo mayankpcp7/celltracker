@@ -42,3 +42,29 @@ export const universalData = [
     justifyClass: "sm:justify-start",
   },
 ];
+export const HowWorklData = [
+  {
+    id: 1,
+    icon: <CompatibleIcon />,
+    title: "Compatible for every phone",
+    description:
+      "Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi vestibulum fames libero id.",
+    justifyClass: "sm:justify-end",
+  },
+  {
+    id: 2,
+    icon: <AllNetworksIcon />,
+    title: "Covers all networks",
+    description:
+      "Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi vestibulum fames libero id.",
+    justifyClass: "sm:justify-start",
+  },
+  {
+    id: 3,
+    icon: <NoInstallationIcon />,
+    title: "No installation required",
+    description:
+      "Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi vestibulum fames libero id.",
+    justifyClass: "sm:justify-end",
+  },
+];
