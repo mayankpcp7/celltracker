@@ -30,6 +30,10 @@ module.exports = {
         md: "150%",
         lg: "166%",
       },
+      screens: {
+        xs: "425px",
+       
+      },
       backgroundImage: {
         "light-sky-gradient":
           "linear-gradient(0deg, #FFFFFF, #FFFFFF),linear-gradient(7.95deg, rgba(0, 181, 216, 0.05) -3.4%, rgba(0, 0, 128, 0.05) 114.66%);",
@@ -39,12 +43,15 @@ module.exports = {
         "landing-hero":
           "url('assets/images/landing/webp/landing-hero-bg.webp')",
         "blue-gradient": "url('assets/images/home/webp/find-phone-bg.webp')",
+        "join-gradient": "url('assets/images/home/webp/join-gradient.webp')",
       },
       boxShadow: {
         "find-shadow": "0px 0px 9.5px 0px #00000014",
-        "viewall": "0px 0px 9.5px 0px #00000014",
+        viewall: "0px 0px 9.5px 0px #00000014",
         "find-shadow": "0px 0px 9.5px 0px #00000014",
+        "join-card": " 0px 16px 25.3px 0px #00000014",
       },
+
       backgroundSize: {
         full: "100% 100%",
       },

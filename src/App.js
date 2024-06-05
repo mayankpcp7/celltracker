@@ -5,7 +5,7 @@ import Landing from "./pages/Landing";
 function App() {
   return (
     <>
-      <div className="overflow-hidden px-3">
+      <div className="overflow-hidden">
         <Home />
         <Landing/>
       </div>

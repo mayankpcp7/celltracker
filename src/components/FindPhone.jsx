@@ -10,7 +10,7 @@ const FindPhone = () => {
         <div className="rounded-[12px]">
           <div className="flex md:flex-row flex-col px-4 bg-blue-gradient bg-start sm:bg-center bg-cover bg-no-repeat  items-center py-12 sm:py-[60px]  lg:py-[98px] rounded-[12px]">
             <img
-              className="min-w-[370px]  min-h-[354px] sm:max-w-[400px] lg:max-w-[580px] xl:max-w-[606px] -mt-[56%] sm:-mt-[24%] md:-mb-[20%] w-full"
+              className="min-w-[370px] min-h-[354px] sm:max-w-[400px] lg:max-w-[580px] xl:max-w-[606px] -mt-[56%] sm:-mt-[24%] md:-mb-[20%] w-full"
               src={mobile}
               alt="mobile"
             />

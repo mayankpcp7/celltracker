@@ -12,13 +12,21 @@ import homeicon from "../assets/images/home/svg/home-icon.svg";
 import emailicon from "../assets/images/home/svg/mail.svg";
 import validcardicon from "../assets/images/home/svg/valid-card.svg";
 import calendericon from "../assets/images/home/svg/calender.svg";
+import smlayer from "../assets/images/home/webp/create-account-layer.webp";
 const CreateAccount = () => {
   return (
     <>
-      <img className="w-full" src={toplayer} />
-      <div className="max-w-[1164px] pt-[98px] px-3 mx-auto">
+      <img className="z-10 sm:hidden relative w-full -mt-[5%]" src={smlayer} alt="layer" />
+      <img
+        className=" relative hidden sm:block z-10 w-full -mt-16 sm:-mt-20 lg:-mt-28"
+        src={toplayer}
+      />
+      <div className="max-w-[1176px] pt-[54px] md:pt-[98px] px-6 mx-auto">
         <BlueHeading headingText="Create your" boldText="Account" />
-        <BlueHeading className="text-sm sm:text-base" SubPera="Join now and protect your family's phones" />
+        <BlueHeading
+          className="text-sm sm:text-base"
+          SubPera="Join now and protect your family's phones"
+        />
         <div className="flex md:flex-row flex-col mt-8 sm:mt-[52px] lg:mt-[72px] items-start md:items-center">
           <div className="flex flex-col">
             <h3 className="text-darkBlue font-mukta text-2xl sm:text-[32px] leading-sm font-light">
