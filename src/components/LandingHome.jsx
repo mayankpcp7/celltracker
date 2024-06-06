@@ -62,14 +62,14 @@ const LandingHome = () => {
           <button onClick={showNav} className="md:hidden relative z-[4]">
             {navBar ? (
               <div className="flex md:hidden flex-col relative z-50 justify-between w-[18px] h-[17px] cursor-pointer">
-                <span className="bg-black w-[11px] h-[2px] relative z-50 transition-all ease-linear duration-300 rotate-[45deg] translate-x-0 translate-y-0 -bottom-[11px]"></span>
-                <span className="bg-black w-[11px] h-[2px] relative z-50  transition-all ease-linear duration-300 rotate-[-45deg] translate-x-0 translate-y-1 bottom-[8px]"></span>
+                <span className="bg-black min-w-[11px] min-h-[2px] relative z-50 transition-all ease-linear duration-300 rotate-[45deg] translate-x-0 -translate-y-1 -bottom-[11px]"></span>
+                <span className="bg-black min-w-[11px] min-h-[2px] relative z-50  transition-all ease-linear duration-300 rotate-[-45deg] translate-x-0 translate-y-0 bottom-[8px]"></span>
               </div>
             ) : (
-              <div className="flex md:hidden flex-col z-50 justify-between w-[24px] h-[24px] cursor-pointer relative">
-                <span className="bg-white rounded-md w-1/2 h-[3px] relative z-50 mb-[3px] transition-all ease-linear duration-300"></span>
-                <span className="bg-white rounded-md w-full h-[3px] relative z-50 mb-[3px] transition-all ease-linear duration-300"></span>
-                <span className="bg-white rounded-md w-1/2 h-[3px] ms-auto relative z-50 mb-[3px] transition-all ease-linear duration-300"></span>
+              <div className="flex md:hidden flex-col z-50 justify-between w-[21px] h-[15px] cursor-pointer relative">
+                <span className="bg-white rounded-md w-1/2 h-[3px] relative z-50  transition-all ease-linear duration-300"></span>
+                <span className="bg-white rounded-md w-full h-[3px] relative z-50  transition-all ease-linear duration-300"></span>
+                <span className="bg-white rounded-md w-1/2 h-[3px] ms-auto relative z-50  transition-all ease-linear duration-300"></span>
               </div>
             )}
           </button>
@@ -86,18 +86,18 @@ const LandingHome = () => {
               Locate any phone,
               <span className=" font-light"> anywhere, anytime</span>
             </h1>
-            <p className=" font-normal max-lg:text-center font-mukta text-base sm:text-base leading-6 text-white mt-3 sm:mt-2 lg:pe-[8px]">
+            <p className=" font-normal max-lg:text-center font-mukta text-sm sm:text-base leading-6 text-white mt-3 sm:mt-2 lg:pe-[8px]">
               Lorem ipsum dolor sit amet consectetur. Nisl vitae arcu volutpat
               nunc cursus. Lacus ornare aliquet condimentum elementum elementum
               nisl nibh sed. Egestas aliquam id quam nunc.
             </p>
-            <div className=" max-lg:mx-auto bg-white rounded shadow-inputNumber flex items-center justify-between ps-2.5 max-w-[448px] mt-6">
+            <div className=" max-lg:mx-auto bg-white rounded flex items-center justify-between ps-2.5 max-w-[448px] mt-6">
               <div className=" flex items-center gap-[7px] ">
                 <span>
                  <IndiaFlagIcon/>
                 </span>
                 <select
-                  className="outline-none text-sm leading-[23px] font-Mukta md:leading-[26px] md:text-base"
+                  className="outline-none text-sm leading-[23px] font-mukta md:leading-[26px] md:text-base"
                   name="number"
                   id="number"
                 >
