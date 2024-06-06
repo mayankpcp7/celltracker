@@ -7,6 +7,7 @@ import {
   Logo,
   Logo2,
 } from "./common/Icons";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [navBar, setnavBar] = useState(false);
@@ -33,28 +34,28 @@ const Hero = () => {
               }`}
             >
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   className="text-black md:text-white font-mukta text-base leading-[26.59px] font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="/landing"
                   className="text-black md:text-white font-mukta text-base leading-[26.59px] font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
                 >
                   How It Works
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="/home"
                   className="text-black md:text-white font-mukta text-base leading-[26.59px] font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
                 >
                   Features
-                </a>
+                </Link>
               </li>
 
               <button className="font-mukta md:hidden bg-dark-blue text-base leading-[26.59px] font-semibold text-white py-4 px-7 rounded-[4px] hover:bg-white duration-300 ">
