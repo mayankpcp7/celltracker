@@ -7,12 +7,12 @@ const Join = () => {
     <>
       <img className="w-full sm:hidden -mb-[10%]" src={smlayer} alt="layer" />
       <img
-        className="w-full -mb-28 sm:block hidden"
+        className="w-full -mb-22 md:-mb-20  sm:block hidden"
         src={joinlayer}
         alt="joinlayer"
       />
       <div className="bg-join-gradient bg-cover bg-center bg-no-repeat pt-24 sm:pt-48 pb-20 sm:pb-40">
-        <div className="max-w-[1176px] mx-auto px-6">
+        <div className="max-w-[1188px] mx-auto px-6">
           <h2 className="text-[28px] sm:text-4xl md:text-[40px] max-w-[300px] sm:max-w-[640px] mx-auto lg:text-5xl text-white leading-full text-center font-light font-mukta ">
             Join <span className="font-extrabold"> 70,000+ companies </span>
             doing time tracking the easy way

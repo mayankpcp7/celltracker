@@ -4,10 +4,14 @@ import FindPhone from "../components/FindPhone";
 import CreateAccount from "../components/CreateAccount";
 import Join from "../components/Join";
 import HowItWorks from "../components/HowItWorks";
+import Advantage from "../components/Advantage";
+import Hero from "../components/Hero";
 
 const Home = () => {
   return (
     <>
+      <Hero/>
+      <Advantage/>
       <HowItWorks />
       <Join />
       <CreateAccount />

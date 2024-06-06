@@ -32,7 +32,7 @@ module.exports = {
       },
       screens: {
         xs: "425px",
-       
+        "2lg": "1190px",
       },
       backgroundImage: {
         "light-sky-gradient":
@@ -44,6 +44,7 @@ module.exports = {
           "url('assets/images/landing/webp/landing-hero-bg.webp')",
         "blue-gradient": "url('assets/images/home/webp/find-phone-bg.webp')",
         "join-gradient": "url('assets/images/home/webp/join-gradient.webp')",
+        hero: "url('assets/images/home/webp/hero-bg.webp')",
       },
       boxShadow: {
         "find-shadow": "0px 0px 9.5px 0px #00000014",
