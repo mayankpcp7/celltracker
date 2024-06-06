@@ -42,6 +42,8 @@ module.exports = {
           "linear-gradient(7.95deg, #00B5D8 -3.4%, #000080 114.66%)",
         "landing-hero":
           "url('assets/images/landing/webp/landing-hero-bg.webp')",
+          "landing-sm-hero":
+          "url('assets/images/landing/webp/landing-hero-sm-bg.webp')",
         "blue-gradient": "url('assets/images/home/webp/find-phone-bg.webp')",
         "join-gradient": "url('assets/images/home/webp/join-gradient.webp')",
         hero: "url('assets/images/home/webp/hero-bg.webp')",

@@ -24,8 +24,8 @@ const Hero = () => {
     <div className="bg-hero relative z-[1] flex flex-col bg-no-repeat bg-cover bg-center lg:bg-full min-h-[810px]">
       {/* navbar */}
       <nav>
-        <div className="max-w-[1164px] px-6 relative z-[100] sm:px-3 mx-auto pt-8 md:pt-[10px]">
-          <div className="flex justify-between items-center">
+        <div className="max-w-[1164px] px-6 sm:px-3 mx-auto">
+          <div className="flex justify-between pt-[32px] pb-[10px] sm:h-[100px] items-center">
             <a href="/" className="relative z-[4]" aria-label="logo">
               {navBar ? <Logo2 /> : <Logo />}
             </a>
@@ -37,16 +37,16 @@ const Hero = () => {
               <li className="md:pe-6">
                 <Link
                   to="/landing"
-                  className="text-black md:gap-[5px] items-center flex max-md:me-6 whitespace-nowrap md:text-white font-mukta text-base font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
+                  className="text-black md:gap-[5px] items-center flex md:me-6 whitespace-nowrap md:text-white font-mukta text-base font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
                 >
-                  <QuickIcon/>
+                  <QuickIcon />
                   Quick Help
                 </Link>
               </li>
               <li className="md:pe-[14px]">
                 <Link
                   to="/"
-                  className="text-black flex items-center md:text-white whitespace-nowrap font-mukta text-base font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
+                  className="text-black pt-5 md:pt-0 flex items-center md:text-white whitespace-nowrap font-mukta text-base font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
                 >
                   Log in
                 </Link>
@@ -54,22 +54,22 @@ const Hero = () => {
 
               <button class="relative flex px-7 py-[14px] mt-[115px] md:mt-0 lg:py-4 sm:max-w-[182px] w-full h-[51px] sm:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue md:bg-white text-dark-Blue transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-skyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
                 <span class="relative font-mukta whitespace-nowrap rounded-[4px] capitalize text-base text-white md:text-darkBlue font-semibold">
-                  Create an Account 
+                  Create an Account
                 </span>
               </button>
             </ul>
-
+            ;
             <button onClick={showNav} className="md:hidden relative z-[4]">
               {navBar ? (
-                <div className="flex md:hidden flex-col relative z-50 justify-between w-[18px] sm:pe-10 h-[17px] cursor-pointer">
-                  <span className="bg-black min-w-[11px] sm:min-w-10 h-[2px] relative z-50 transition-all ease-linear duration-300 rotate-[45deg] translate-x-0 translate-y-0 -bottom-[11px]"></span>
-                  <span className="bg-black min-w-[11px] sm:min-w-10 h-[2px] relative z-50  transition-all ease-linear duration-300 rotate-[-45deg] translate-x-0 translate-y-1 bottom-[8px]"></span>
+                <div className="flex md:hidden flex-col relative z-50 justify-between w-[24px] h-[24px] cursor-pointer">
+                  <span className="bg-black min-w-[11px] min-h-[2px] relative z-50 transition-all ease-linear duration-300 rotate-[45deg] translate-x-0 -translate-y-1 -bottom-[15px]"></span>
+                  <span className="bg-black min-w-[11px] min-h-[2px] relative z-50  transition-all ease-linear duration-300 rotate-[-45deg] translate-x-0 translate-y-0 bottom-[11px]"></span>
                 </div>
               ) : (
-                <div className="flex md:hidden flex-col z-50 justify-between w-[24px] h-[24px] sm:w-10 sm:h-10 cursor-pointer relative">
-                  <span className="bg-white rounded-md w-1/2 h-[3px] relative z-50 mb-[3px] transition-all ease-linear duration-300"></span>
-                  <span className="bg-white rounded-md w-full h-[3px] relative z-50 mb-[3px] transition-all ease-linear duration-300"></span>
-                  <span className="bg-white rounded-md w-1/2 h-[3px] ms-auto relative z-50 mb-[3px] transition-all ease-linear duration-300"></span>
+                <div className="flex md:hidden flex-col z-50 justify-between my-1 w-[21px] h-[15px] cursor-pointer relative">
+                  <span className="bg-white rounded-md w-1/2 h-[3px] relative z-50  transition-all ease-linear duration-300"></span>
+                  <span className="bg-white rounded-md w-full h-[3px] relative z-50  transition-all ease-linear duration-300"></span>
+                  <span className="bg-white rounded-md w-1/2 h-[3px] ms-auto relative z-50  transition-all ease-linear duration-300"></span>
                 </div>
               )}
             </button>
@@ -169,3 +169,8 @@ const Hero = () => {
   );
 };
 export default Hero;
+
+
+
+
+ 

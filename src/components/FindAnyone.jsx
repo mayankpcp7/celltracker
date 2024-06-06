@@ -5,7 +5,7 @@ import IphoneMockup from '../assets/images/landing/webp/iPhone-x-mockup.png'
 
 const FindAnyone = () => {
   return (
-    <div className='mt-[132px]'>
+    <div className='mt-[97px] md:mt-[132px]'>
     <div className="max-w-[1164px] mx-auto px-6 sm:px-3">
    <div className="px-3">
    <BlueHeading headingText="Find Anyone Anywhere" boldText=" for Under $1" />
