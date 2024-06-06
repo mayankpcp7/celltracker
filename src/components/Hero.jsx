@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DoubleMobile from "../assets/landing/webp/double-mobile-location-tarcking.png";
+import DoubleMobile from "../assets/images/landing/webp/double-mobile-location-tarcking.webp";
 import {
   IndiaFlagIcon,
   LocationLogo,

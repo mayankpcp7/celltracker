@@ -5,15 +5,27 @@ import instagram from "../../assets/images/home/svg/instagram.svg";
 import facebook from "../../assets/images/home/svg/facebook.svg";
 import twitter from "../../assets/images/home/svg/twitter.svg";
 import vector from "../../assets/images/home/webp/footer-vec.webp";
+import { useLocation } from "react-router-dom";
 const Footer = () => {
   const getCurrentYear = () => new Date().getFullYear();
+  const location = useLocation();
   return (
     <div className="max-w-[1140px] relative mx-auto px-3 md:mt-20 mt-[58px] sm:mt-[64px] lg:mt-[102px]">
-      <img
-        className="max-w-[41px] sm:max-w-[106px] end-[-1%] bottom-[25%] absolute md:end-[-13%] md:bottom-[10%]"
-        src={vector}
-        alt="vector"
-      />
+       {location.pathname === '/landing' && (
+        <img
+          className="max-w-[41px] sm:max-w-[106px] bottom-16 md:top-[-120%] right-0 md:rotate-[180deg] md:left-0 xl:left-[-13%] absolute "
+          src={vector}
+          alt="vector"
+        />
+        
+      )}
+         {location.pathname === '/home' && (
+        <img
+          className="max-w-[41px] sm:max-w-[106px] end-[-1%] bottom-[25%] absolute md:end-[-13%] md:bottom-[10%]"
+          src={vector}
+          alt="vector"
+        />
+      )}
       <div className="flex justify-between md:flex-row flex-col gap-8 items-center">
         <a href="#">
           <img
