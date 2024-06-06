@@ -6,6 +6,7 @@ import {
   LocationVector,
   Logo,
   Logo2,
+  QuickIcon,
 } from "./common/Icons";
 import { Link } from "react-router-dom";
 
@@ -23,56 +24,49 @@ const Hero = () => {
     <div className="bg-hero relative z-[1] flex flex-col bg-no-repeat bg-cover bg-center lg:bg-full min-h-[810px]">
       {/* navbar */}
       <nav>
-        <div className="max-w-[1164px] px-6 sm:px-3 mx-auto pt-[27px]">
+        <div className="max-w-[1164px] px-6 relative z-[100] sm:px-3 mx-auto pt-8 md:pt-[10px]">
           <div className="flex justify-between items-center">
             <a href="/" className="relative z-[4]" aria-label="logo">
               {navBar ? <Logo2 /> : <Logo />}
             </a>
             <ul
-              className={`flex items-center gap-[35px] duration-300 max-md:fixed max-md:w-full max-md:h-full max-md:justify-start max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${
+              className={`flex items-center duration-300 max-md:fixed  justify-end  w-full max-md:h-full max-md:justify-start max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${
                 navBar && "!left-0"
               }`}
             >
-              <li>
-                <Link
-                  to="/"
-                  className="text-black md:text-white font-mukta text-base leading-[26.59px] font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
+              <li className="md:pe-6">
                 <Link
                   to="/landing"
-                  className="text-black md:text-white font-mukta text-base leading-[26.59px] font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
+                  className="text-black md:gap-[5px] items-center flex max-md:me-6 whitespace-nowrap md:text-white font-mukta text-base font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
                 >
-                  How It Works
+                  <QuickIcon/>
+                  Quick Help
                 </Link>
               </li>
-              <li>
+              <li className="md:pe-[14px]">
                 <Link
                   to="/"
-                  className="text-black md:text-white font-mukta text-base leading-[26.59px] font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
+                  className="text-black flex items-center md:text-white whitespace-nowrap font-mukta text-base font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
                 >
-                  Features
+                  Log in
                 </Link>
               </li>
 
-              <button className="font-mukta md:hidden bg-dark-blue text-base leading-[26.59px] font-semibold text-white py-4 px-7 rounded-[4px] hover:bg-white duration-300 ">
-                Log In
+              <button class="relative flex px-7 py-[14px] mt-[115px] md:mt-0 lg:py-4 sm:max-w-[182px] w-full h-[51px] sm:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue md:bg-white text-dark-Blue transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-skyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
+                <span class="relative font-mukta whitespace-nowrap rounded-[4px] capitalize text-base text-white md:text-darkBlue font-semibold">
+                  Create an Account 
+                </span>
               </button>
             </ul>
-            <button className="font-mukta text-dark-blue hover:bg-linear-blue hover:text-white transition-all duration-300 ease-in-out max-md:hidden text-base leading-[26.59px] font-semibold bg-white py-[14px] md:py-4 px-7 rounded-[4px]">
-              Log In
-            </button>
+
             <button onClick={showNav} className="md:hidden relative z-[4]">
               {navBar ? (
-                <div className="flex md:hidden flex-col relative z-50 justify-between w-[18px] h-[17px] cursor-pointer">
-                  <span className="bg-black w-[11px] h-[2px] relative z-50 transition-all ease-linear duration-300 rotate-[45deg] translate-x-0 translate-y-0 -bottom-[11px]"></span>
-                  <span className="bg-black w-[11px] h-[2px] relative z-50  transition-all ease-linear duration-300 rotate-[-45deg] translate-x-0 translate-y-1 bottom-[8px]"></span>
+                <div className="flex md:hidden flex-col relative z-50 justify-between w-[18px] sm:pe-10 h-[17px] cursor-pointer">
+                  <span className="bg-black min-w-[11px] sm:min-w-10 h-[2px] relative z-50 transition-all ease-linear duration-300 rotate-[45deg] translate-x-0 translate-y-0 -bottom-[11px]"></span>
+                  <span className="bg-black min-w-[11px] sm:min-w-10 h-[2px] relative z-50  transition-all ease-linear duration-300 rotate-[-45deg] translate-x-0 translate-y-1 bottom-[8px]"></span>
                 </div>
               ) : (
-                <div className="flex md:hidden flex-col z-50 justify-between w-[24px] h-[24px] cursor-pointer relative">
+                <div className="flex md:hidden flex-col z-50 justify-between w-[24px] h-[24px] sm:w-10 sm:h-10 cursor-pointer relative">
                   <span className="bg-white rounded-md w-1/2 h-[3px] relative z-50 mb-[3px] transition-all ease-linear duration-300"></span>
                   <span className="bg-white rounded-md w-full h-[3px] relative z-50 mb-[3px] transition-all ease-linear duration-300"></span>
                   <span className="bg-white rounded-md w-1/2 h-[3px] ms-auto relative z-50 mb-[3px] transition-all ease-linear duration-300"></span>
@@ -147,11 +141,7 @@ const Hero = () => {
             </div>
             <div className="lg:w-1/2 w-full px-3 -ms-5">
               <div className=" relative lg:min-w-[581px] max-w-[339px] mx-auto">
-                <img
-                  src={mobile}
-                  className=""
-                  alt="phoneHeader"
-                />
+                <img src={mobile} className="" alt="phoneHeader" />
                 <div className=" absolute z-20  bg-white rounded-xl w-[164px] sm:w-[280px] h-[168px] p-[18px] sm:h-[197px]">
                   <div className="flex flex-col">
                     <div className="flex justify-between items-start">
