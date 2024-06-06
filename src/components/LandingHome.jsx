@@ -14,16 +14,16 @@ const LandingHome = () => {
       document.body.classList.remove("max-md:overflow-hidden");
     }
   return (
-    <div className="bg-landing-hero relative z-[1] flex flex-col bg-no-repeat bg-cover bg-center lg:bg-full min-h-[810px]">
+    <div className="bg-landing-sm-hero sm:bg-landing-hero relative z-[1] flex flex-col bg-no-repeat bg-cover bg-center lg:bg-full min-h-[800px]">
       {/* navbar */}
       <nav>
-      <div className="max-w-[1164px] px-6 sm:px-3 mx-auto pt-[27px]">
-        <div className="flex justify-between items-center">
+      <div className="max-w-[1164px] px-6 sm:px-3 mx-auto sm:mt-[7px]">
+        <div className="flex justify-between pt-[32px] pb-[10px] sm:h-[100px] items-center">
           <a href="/" className="relative z-[4]" aria-label="logo">
             {navBar ? <Logo2 /> : <Logo />}
           </a>
           <ul
-            className={`flex items-center gap-[35px] duration-300 max-md:fixed max-md:w-full max-md:h-full max-md:justify-start max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${
+            className={`flex items-center gap-[20px] sm:gap-[35px] duration-300 max-md:fixed max-md:w-full max-md:h-full max-md:justify-start max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${
               navBar && "!left-0"
             }`}
           >
@@ -46,27 +46,28 @@ const LandingHome = () => {
                 <li>
                 <a
                   href="/"
-                  className="text-black md:text-white font-mukta text-base leading-[26.59px] font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
-                >
+                  className="text-black md:text-white font-mukta text-base leading-[26.59px] font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full">
                  Features
                 </a>
               </li>
+             
         
-            <button className="font-mukta md:hidden bg-dark-blue text-base leading-[26.59px] font-semibold text-white py-4 px-7 rounded-[4px] hover:bg-white duration-300 ">
+            <button className="font-mukta md:hidden mt-12  text-base leading-[26.59px] max-w-[315px] font-semibold text-white w-full h-[51px] rounded-[4px] !bg-darkBlue duration-300 ">
               Log In
             </button>
           </ul>
+         
           <button className="font-mukta text-dark-blue hover:bg-linear-blue hover:text-white transition-all duration-300 ease-in-out max-md:hidden text-base leading-[26.59px] font-semibold bg-white py-[14px] md:py-4 px-7 rounded-[4px]">
             Log In
           </button>
           <button onClick={showNav} className="md:hidden relative z-[4]">
             {navBar ? (
-              <div className="flex md:hidden flex-col relative z-50 justify-between w-[18px] h-[17px] cursor-pointer">
-                <span className="bg-black min-w-[11px] min-h-[2px] relative z-50 transition-all ease-linear duration-300 rotate-[45deg] translate-x-0 -translate-y-1 -bottom-[11px]"></span>
-                <span className="bg-black min-w-[11px] min-h-[2px] relative z-50  transition-all ease-linear duration-300 rotate-[-45deg] translate-x-0 translate-y-0 bottom-[8px]"></span>
+              <div className="flex md:hidden flex-col relative z-50 justify-between w-[24px] h-[24px] cursor-pointer">
+                <span className="bg-black min-w-[11px] min-h-[2px] relative z-50 transition-all ease-linear duration-300 rotate-[45deg] translate-x-0 -translate-y-1 -bottom-[15px]"></span>
+                <span className="bg-black min-w-[11px] min-h-[2px] relative z-50  transition-all ease-linear duration-300 rotate-[-45deg] translate-x-0 translate-y-0 bottom-[11px]"></span>
               </div>
             ) : (
-              <div className="flex md:hidden flex-col z-50 justify-between w-[21px] h-[15px] cursor-pointer relative">
+              <div className="flex md:hidden flex-col z-50 justify-between my-1 w-[21px] h-[15px] cursor-pointer relative">
                 <span className="bg-white rounded-md w-1/2 h-[3px] relative z-50  transition-all ease-linear duration-300"></span>
                 <span className="bg-white rounded-md w-full h-[3px] relative z-50  transition-all ease-linear duration-300"></span>
                 <span className="bg-white rounded-md w-1/2 h-[3px] ms-auto relative z-50  transition-all ease-linear duration-300"></span>

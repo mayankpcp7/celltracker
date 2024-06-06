@@ -4,6 +4,7 @@ import { universalData } from "./common/Helper";
 
 const UniversalPrivacy = () => {
   return (
+    <div className="mt-[94px] xl:mt-[76px] md:mt-[10px]">
     <div className="max-w-[1164px] mx-auto px-6 sm:px-3">
      
           <BlueHeading headingText="Universal" boldText="Privacy" />
@@ -30,6 +31,7 @@ const UniversalPrivacy = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

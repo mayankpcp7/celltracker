@@ -238,7 +238,7 @@ export const Logo = () => {
     <svg
       width="259"
       height="36"
-      className="max-md:w-[98px] max-md:h-[13px]"
+      className="max-md:w-[98px] max-lg:w-[150px] max-lg:h-[30px] max-md:h-[13px]"
       viewBox="0 0 259 36"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

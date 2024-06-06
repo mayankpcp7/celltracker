@@ -7,12 +7,12 @@ const HowItWork = () => {
         <>
             <div className="max-w-[1164px] mx-auto px-6 sm:px-3">
                 
-                <div className="mt-[98px] mb-[34px] md:mb-14">
+                <div className="mt-[94px] md:mt-[131px] mb-[34px] md:mb-14">
                     <BlueHeading headingText="How it" boldText="works" />
                     <BlueHeading SubPera="Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi sit elit rhoncus vestibulum fames libero id." />
 
                 </div>
-               <div className="flex flex-wrap justify-center mb-[152px] sm:mb-[157px]  px-9 xl:px-0">
+               <div className="flex flex-wrap justify-center pb-[94px] sm:pb-[45px]  px-9 xl:px-0">
                  
                <div className="w-full md:w-[40%] lg:w-[28%] xl:w-[22%] flex justify-center lg:justify-start">
                 <div className="flex flex-col max-w-[267px] min-h-[233px] md:min-h-[298px] pt-[27px] items-center">
