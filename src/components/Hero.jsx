@@ -16,21 +16,21 @@ const Hero = () => {
     setnavBar(!navBar);
   }
   if (navBar) {
-    document.body.classList.add("max-md:overflow-hidden");
+    document.body.classList.add("overflow-hidden");
   } else {
-    document.body.classList.remove("max-md:overflow-hidden");
+    document.body.classList.remove("overflow-hidden");
   }
   return (
     <div className="bg-hero relative z-[1] flex flex-col bg-no-repeat bg-cover bg-center lg:bg-full min-h-[810px]">
       {/* navbar */}
       <nav>
         <div className="max-w-[1164px] px-6 sm:px-3 mx-auto">
-          <div className="flex justify-between pt-[32px] pb-[10px] sm:h-[100px] items-center">
-            <a href="/" className="relative z-[4]" aria-label="logo">
-              {navBar ? <Logo2 /> : <Logo />}
+          <div className="flex justify-between pt-[32px] lg:pt-0 pb-[10px] sm:h-[100px] items-center">
+            <a href="/" className="relative z-[50]" aria-label="logo">
+              {navBar ? <Logo2 className="Z-[50]" /> : <Logo className="z-[50]" />}
             </a>
             <ul
-              className={`flex items-center duration-300 max-md:fixed  justify-end  w-full max-md:h-full max-md:justify-start max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${
+              className={`flex items-center duration-300 max-md:fixed  justify-end  w-full max-md:h-full max-md:justify-start max-md:pt-[121px] max-md:flex-col max-md:z-[40] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${
                 navBar && "!left-0"
               }`}
             >
@@ -82,7 +82,7 @@ const Hero = () => {
         <div className="max-w-[1164px] w-full px-6 sm:px-3 mx-auto">
           <div className="flex flex-row flex-wrap -mx-3">
             <div className="lg:w-1/2 w-full px-3 lg:mt-[71px]">
-              <h1 className=" text-white text-[32px] sm:text-5xl lg:text-[52px] xl:text-[64px] leading-[37px] sm:leading-[49px] lg:leading-[64px] font-extrabold font-mukta text-start md:max-w-[520px]">
+              <h1 className=" text-white text-start text-[32px] sm:text-5xl lg:text-[52px] xl:text-[64px] leading-[37px] sm:leading-[49px] lg:leading-[64px] font-extrabold font-mukta max-lg:text-center max-lg:mx-auto md:max-w-[520px]">
                 Find the location
                 <span className=" font-light"> of any phone by its number</span>
               </h1>
@@ -139,22 +139,26 @@ const Hero = () => {
                 </button>
               </div>
             </div>
-            <div className="lg:w-1/2 w-full px-3 -ms-5">
-              <div className=" relative lg:min-w-[581px] max-w-[339px] mx-auto">
-                <img src={mobile} className="" alt="phoneHeader" />
-                <div className=" absolute z-20  bg-white rounded-xl w-[164px] sm:w-[280px] h-[168px] p-[18px] sm:h-[197px]">
+            <div className="lg:w-1/2 w-full px-3  xs:-ms-5">
+              <div className=" relative mt-[30px] xl:-ms-[10%] lg:mt-0 mx-auto">
+                <img
+                  src={mobile}
+                  className="min-w-[581px] min-h[604px] max-w-[581px] max-h-[604px]"
+                  alt="phoneHeader"
+                />
+                <div className=" absolute z-20 end-[-6%]  bottom-[25%] bg-white rounded-xl w-[164px] sm:w-[280px] h-[168px] p-2 sm:p-[18px] sm:h-[197px]">
                   <div className="flex flex-col">
-                    <div className="flex justify-between items-start">
-                      <p className="font-mukta font-bold text-2xl text-skyBlue">
+                    <div className="flex justify-between items-center">
+                      <p className="font-mukta font-bold text-xl sm:text-2xl text-skyBlue">
                         Need help?
                       </p>
                       <Headphone />
                     </div>
-                    <p className="text-darkBlue font-normal font-mukta text-base max-w-[198px]">
+                    <p className="text-darkBlue font-normal font-mukta text-sm sm:text-base leading-md max-w-[198px]">
                       Get help with technical, account and billing enquiries.
                     </p>
-                    <button class="relative flex px-7 py-[14px] lg:py-4 sm:max-w-full w-full h-[51px] sm:h-[59px] mt-7 rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue text-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-skyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
-                      <span class="relative font-mukta rounded-[4px] capitalize text-base text-white font-normal">
+                    <button class="relative flex px-[18px] sm:px-7 py-2 sm:py-[14px] lg:py-4 sm:max-w-full w-full h-[39px] sm:h-[59px] mt-3 sm:mt-3 rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue text-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-skyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
+                      <span class="relative font-mukta rounded-[4px] capitalize text-sm sm:text-base text-white font-normal">
                         Customer Support
                       </span>
                     </button>

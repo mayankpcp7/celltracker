@@ -857,7 +857,7 @@ export const QuickIcon= () => {
 };
 export const Headphone = () => {
   return (
-    <svg
+    <svg className="sm:max-w-10 max-w-9"
       width="41"
       height="41"
       viewBox="0 0 41 41"

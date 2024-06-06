@@ -6,7 +6,11 @@ const FindPhone = () => {
   return (
     <>
       <div className="max-w-[1164px] px-3 mx-auto pt-[248px] relative">
-        <img className="absolute start-[-12%] max-w-[106px] bottom-[30%]" src={rightvec} alt="vec" />
+        <img
+          className="absolute start-[-12%] max-w-[106px] bottom-[30%]"
+          src={rightvec}
+          alt="vec"
+        />
         <div className="rounded-[12px]">
           <div className="flex md:flex-row flex-col px-4 bg-blue-gradient bg-start sm:bg-center bg-cover bg-no-repeat  items-center py-12 sm:py-[60px]  lg:py-[98px] rounded-[12px]">
             <img
@@ -23,8 +27,10 @@ const FindPhone = () => {
                 Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper
                 nisi sit elit rhoncus vestibulum fames libero id.
               </p>
-              <button className="bg-white sm:max-w-full max-w-[266px] mt-7 lg:mt-8 font-semibold rounded-[4px] text-darkBlue py-3 lg:py-4 px-5 lg:px-7">
-                Start Now
+              <button class="relative flex px-7 py-[14px] lg:py-4 sm:max-w-[127px] w-full h-[51px] sm:h-[59px] mt-7 rounded-[4px] items-center justify-center overflow-hidden bg-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-lightskyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
+                <span class="relative font-mukta rounded-[4px] capitalize text-base text-darkBlue font-semibold">
+                  Start Now
+                </span>
               </button>
             </div>
           </div>

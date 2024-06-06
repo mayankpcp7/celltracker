@@ -13,15 +13,25 @@ import emailicon from "../assets/images/home/svg/mail.svg";
 import validcardicon from "../assets/images/home/svg/valid-card.svg";
 import calendericon from "../assets/images/home/svg/calender.svg";
 import smlayer from "../assets/images/home/webp/create-account-layer.webp";
+import rightvec from "../assets/images/home/webp/right-vec.webp";
 const CreateAccount = () => {
   return (
     <>
-      <img className="z-10 sm:hidden relative w-full -mt-[5%]" src={smlayer} alt="layer" />
+      <img
+        className="z-10 sm:hidden relative w-full -mt-[5%]"
+        src={smlayer}
+        alt="layer"
+      />
       <img
         className=" relative hidden sm:block z-10 w-full -mt-16 sm:-mt-20 lg:-mt-28"
         src={toplayer}
       />
-      <div className="max-w-[1176px] pt-[54px] md:pt-[98px] px-6 mx-auto">
+      <div className="max-w-[1188px] pt-[54px] md:pt-[98px] px-6 mx-auto relative">
+        <img
+          className="max-w-[41px] sm:max-w-[106px] end-[-1%] bottom-[25%] absolute md:end-[-13%] md:bottom-[10%]"
+          src={rightvec}
+          alt="vector"
+        />
         <BlueHeading headingText="Create your" boldText="Account" />
         <BlueHeading
           className="text-sm sm:text-base"

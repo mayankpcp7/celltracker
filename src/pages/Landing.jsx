@@ -9,7 +9,7 @@ import Preloader from "../components/common/Preloader";
 const Landing = () => {
   return (
     <>
-      {/* <LandingHome /> */}
+      <LandingHome />
       <UniversalPrivacy />
       <FindAnyone />
       <HowItWork />

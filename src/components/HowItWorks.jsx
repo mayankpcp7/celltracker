@@ -33,7 +33,7 @@ const HowItWorks = () => {
           </div>
           <div className="w-full lg:w-6/12 sm:w-9/12 lg:ps-6 lg:pt-12">
             <div className="flex flex-col items-center gap-[18px]">
-              <div className="flex flex-col min-h-[303px] xs:min-h-[273px] max-w-[536px] rounded-xl shadow-join-card border bg-white px-5 pt-5 pb-3 border-borderGrey">
+              <div className="flex flex-col min-h-[303px] xs:min-h-[273px] max-w-[536px] rounded-xl shadow-join-card border hover:border-darkBlue transition-all duration-300 bg-white px-5 pt-5 pb-3 border-borderGrey">
                 <WorkLocation />
                 <h3 className="pt-2 sm:pt-4 text-darkBlue leading-sm text-xl sm:text-2xl font-mukta font-normal">
                   Locate the people important to you, from any web device
@@ -46,7 +46,7 @@ const HowItWorks = () => {
                   safe without being invasive.
                 </p>
               </div>
-              <div className="flex flex-col min-h-[303px] xs:min-h-[273px] max-w-[536px] rounded-xl shadow-join-card border bg-white px-5 pt-5 pb-3 border-borderGrey">
+              <div className="flex flex-col min-h-[303px] xs:min-h-[273px] max-w-[536px] rounded-xl shadow-join-card border hover:border-darkBlue transition-all duration-300 bg-white px-5 pt-5 pb-3 border-borderGrey">
                 <AccurateLocation />
                 <h3 className="pt-2 sm:pt-4 text-darkBlue leading-sm text-xl sm:text-2xl font-mukta font-normal">
                   Accurate location info for any phone on any network.
@@ -65,12 +65,12 @@ const HowItWorks = () => {
         </div>
         <div className="flex sm:flex-row flex-col  gap-4 lg:mt-24 mt-10  sm:justify-center sm:items-center">
           <button class="relative w-full mx-auto sm:mx-0 max-w-[536px] sm:w-[195px] flex px-7 py-[14px] lg:py-4 h-[51px] sm:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue text-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-skyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
-            <span class="relative font-mukta rounded-[4px] capitalize text-base text-white font-normal">
+            <span class="relative font-mukta rounded-[4px] whitespace-nowrap capitalize text-base text-white font-semibold">
               Create your Account
             </span>
           </button>
-          <button class="relative w-full mx-auto sm:mx-0 max-w-[536px] sm:w-[195px] border border-darkBlue flex px-7 py-[14px] lg:py-4 h-[51px] sm:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-white text-darkBlue transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-skyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
-            <span class="relative font-mukta rounded-[4px] capitalize text-base text-darkBlue font-normal">
+          <button class="relative w-full mx-auto sm:mx-0 max-w-[536px] sm:w-[195px] border border-darkBlue flex px-7 py-[14px] lg:py-4 h-[51px] sm:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-white text-darkBlue transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-lightskyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
+            <span class="relative font-mukta rounded-[4px] capitalize text-base whitespace-nowrap text-darkBlue font-semibold">
               Got more Question?
             </span>
           </button>
