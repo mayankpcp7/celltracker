@@ -238,7 +238,7 @@ export const Logo = () => {
     <svg
       width="259"
       height="36"
-      className="max-md:w-[98px] max-lg:w-[150px] max-lg:h-[30px] max-md:h-[13px]"
+      className="lg:max-w-full max-w-[99px] sm:max-w-[150px] md:max-w-[200px]"
       viewBox="0 0 259 36"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -296,9 +296,9 @@ export const Logo = () => {
 };
 export const Logo2 = () => {
   return (
-    <svg
-      width="99"
-      height="14"
+    <svg 
+      width="119"
+      height="34"
       viewBox="0 0 99 14"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -1142,6 +1142,91 @@ export const SimpleUse = () => {
             transform="translate(13 12)"
           />
         </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
+// --------------------------------------------- Back To Top -----------------------------------------
+export const BackArrow = () => {
+  return (
+    <svg
+      className="fixed z-[49] lg:max-w-[60px] md:max-w-[50px] max-w-[45px] bottom-4 end-4 cursor-pointer"
+      width="84"
+      height="84"
+      viewBox="0 0 84 84"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g filter="url(#filter0_d_4041_2)">
+        <rect
+          x="12"
+          y="12"
+          width="60"
+          height="60"
+          rx="30"
+          fill="url(#paint0_linear_4041_2)"
+        />
+        <rect
+          x="12.5"
+          y="12.5"
+          width="59"
+          height="59"
+          rx="29.5"
+          stroke="#00C2FF"
+        />
+      </g>
+      <path
+        d="M43.7678 24.2322C42.7915 23.2559 41.2085 23.2559 40.2322 24.2322L24.3223 40.1421C23.346 41.1184 23.346 42.7014 24.3223 43.6777C25.2986 44.654 26.8816 44.654 27.8579 43.6777L42 29.5355L56.1421 43.6777C57.1184 44.654 58.7014 44.654 59.6777 43.6777C60.654 42.7014 60.654 41.1184 59.6777 40.1421L43.7678 24.2322ZM44.5 57V42.9091H39.5V57H44.5ZM44.5 42.9091L44.5 26H39.5L39.5 42.9091H44.5Z"
+        fill="white"
+      />
+      <defs>
+        <filter
+          id="filter0_d_4041_2"
+          x="0"
+          y="0"
+          width="84"
+          height="84"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset />
+          <feGaussianBlur stdDeviation="6" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0.709804 0 0 0 0 0.847059 0 0 0 1 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_4041_2"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_4041_2"
+            result="shape"
+          />
+        </filter>
+        <linearGradient
+          id="paint0_linear_4041_2"
+          x1="42"
+          y1="12"
+          x2="42"
+          y2="72"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#00C2FF" />
+          <stop offset="0.557725" stop-color="#000080" />
+        </linearGradient>
       </defs>
     </svg>
   );

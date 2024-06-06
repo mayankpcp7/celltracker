@@ -6,6 +6,7 @@ import Join from "../components/Join";
 import HowItWorks from "../components/HowItWorks";
 import Advantage from "../components/Advantage";
 import Hero from "../components/Hero";
+import { BackTop } from "../components/common/Icons";
 
 const Home = () => {
   return (

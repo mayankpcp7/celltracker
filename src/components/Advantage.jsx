@@ -3,11 +3,14 @@ import { BlueHeading } from "./common/CommonHeading";
 import { AdvantageData } from "./common/Helper";
 import rightvector from "../assets/images/home/webp/right-vec.webp";
 import leftvector from "../assets/images/home/webp/footer-vec.webp";
-import layer from "../assets/images/home/webp/advantage-layer.webp"
+import layer from "../assets/images/home/webp/advantage-layer.webp";
+import smlayer from "../assets/images/home/webp/header-bottom-layer.webp"
 const Advantage = () => {
   return (
     <>
-      <div className="max-w-[1188px] mt-11 sm:mt-16 md:mt-20 lg:mt-[198px]  px-6 mx-auto relative">
+      <img className="w-full relative z-[60] xs:hidden -mt-[15%] sm:-mt-[10%]" src={layer} alt="layer" />
+      <img className="w-full relative z-[60] hidden xs:block min-h-[97px] -mt-[15%] sm:-my-[10%]" src={layer} alt="layer" />
+      <div className="max-w-[1188px] mt-16 z-[70] px-6 mx-auto relative">
         <img
           className="absolute z-0 start-[-10.5%] sm:max-w-[106px] max-w-[41px] top-[8%]"
           src={rightvector}

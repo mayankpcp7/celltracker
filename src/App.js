@@ -6,6 +6,7 @@ import Preloader from "./components/common/Preloader";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import BackToTop from "./components/common/BackToTop";
 
 function App() {
   useEffect(() => {
@@ -15,11 +16,12 @@ function App() {
   return (
     <>
       <div className="overflow-hidden">
-      <Preloader/>
+        <Preloader />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/landing" element={<Landing />}></Route>
         </Routes>
+        <BackToTop />
       </div>
     </>
   );

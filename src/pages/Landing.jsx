@@ -7,6 +7,7 @@ import LandingHome from "../components/LandingHome";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { BackTop } from "../components/common/Icons";
 
 const Landing = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const Landing = () => {
       <FindAnyone />
       <HowItWork />
       <Footer />
+     
     </div>
   );
 };
