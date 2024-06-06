@@ -7,7 +7,6 @@ import layer from "../assets/images/home/webp/advantage-layer.webp"
 const Advantage = () => {
   return (
     <>
-      <img className="w-full mt-[-10%]" src={layer} alt="layer" />
       <div className="max-w-[1188px] mt-11 sm:mt-16 md:mt-20 lg:mt-[198px]  px-6 mx-auto relative">
         <img
           className="absolute z-0 start-[-10.5%] sm:max-w-[106px] max-w-[41px] top-[8%]"

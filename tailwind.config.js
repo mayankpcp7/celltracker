@@ -51,6 +51,7 @@ module.exports = {
         viewall: "0px 0px 9.5px 0px #00000014",
         "find-shadow": "0px 0px 9.5px 0px #00000014",
         "join-card": " 0px 16px 25.3px 0px #00000014",
+        "need-shadow": " 0px 0px 24.6px 0px #00000059",
       },
 
       backgroundSize: {

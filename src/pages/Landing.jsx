@@ -5,14 +5,15 @@ import FindAnyone from "../components/FindAnyone";
 import Footer from "../components/common/Footer";
 import HowItWork from "../components/HowItWork";
 import LandingHome from "../components/LandingHome";
+import Preloader from "../components/common/Preloader";
 
 const Landing = () => {
   return (
     <>
       <LandingHome />
       <UniversalPrivacy />
-       <FindAnyone />
-      <HowItWork/>
+      <FindAnyone />
+      <HowItWork />
       <Footer />
     </>
   );

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import DoubleMobile from "../assets/landing/webp/double-mobile-location-tarcking.png";
+import mobile from "../assets/images/home/webp/hero-phone.png";
 import {
+  Headphone,
   IndiaFlagIcon,
-  LocationLogo,
   LocationVector,
   Logo,
   Logo2,
@@ -20,7 +20,7 @@ const Hero = () => {
     document.body.classList.remove("max-md:overflow-hidden");
   }
   return (
-    <div className="bg-landing-hero relative z-[1] flex flex-col bg-no-repeat bg-cover bg-center lg:bg-full min-h-[810px]">
+    <div className="bg-hero relative z-[1] flex flex-col bg-no-repeat bg-cover bg-center lg:bg-full min-h-[810px]">
       {/* navbar */}
       <nav>
         <div className="max-w-[1164px] px-6 sm:px-3 mx-auto pt-[27px]">
@@ -51,7 +51,7 @@ const Hero = () => {
               </li>
               <li>
                 <Link
-                  to="/home"
+                  to="/"
                   className="text-black md:text-white font-mukta text-base leading-[26.59px] font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
                 >
                   Features
@@ -88,14 +88,13 @@ const Hero = () => {
         <div className="max-w-[1164px] w-full px-6 sm:px-3 mx-auto">
           <div className="flex flex-row flex-wrap -mx-3">
             <div className="lg:w-1/2 w-full px-3 lg:mt-[71px]">
-              <h1 className=" text-white max-lg:text-center text-[32px] sm:text-5xl lg:text-[52px] xl:text-[64px] leading-[37px] sm:leading-[49px] lg:leading-[64px] font-extrabold font-mukta">
-                Find the location of any phone by its number
-                <span className=" font-light"> anywhere, anytime</span>
+              <h1 className=" text-white text-[32px] sm:text-5xl lg:text-[52px] xl:text-[64px] leading-[37px] sm:leading-[49px] lg:leading-[64px] font-extrabold font-mukta text-start md:max-w-[520px]">
+                Find the location
+                <span className=" font-light"> of any phone by its number</span>
               </h1>
               <p className=" font-normal max-lg:text-center font-mukta text-base sm:text-base leading-6 text-white mt-3 sm:mt-2 lg:pe-[8px]">
-                Lorem ipsum dolor sit amet consectetur. Nisl vitae arcu volutpat
-                nunc cursus. Lacus ornare aliquet condimentum elementum
-                elementum nisl nibh sed. Egestas aliquam id quam nunc.
+                Add phones to your account & track them when neededAdd phones to
+                your account & track them when needed
               </p>
               <div className=" max-lg:mx-auto bg-white rounded shadow-inputNumber flex items-center justify-between ps-2.5 max-w-[448px] mt-6">
                 <div className=" flex items-center gap-[7px] ">
@@ -146,39 +145,29 @@ const Hero = () => {
                 </button>
               </div>
             </div>
-            <div className="lg:w-1/2 w-full px-3 max-lg:mt-[68px]">
-              <div className=" relative  max-lg:max-w-[600px] max-md:max-w-[322px] mx-auto z-[1]">
+            <div className="lg:w-1/2 w-full px-3 -ms-5">
+              <div className=" relative lg:min-w-[581px] max-w-[339px] mx-auto">
                 <img
-                  src={DoubleMobile}
-                  className="xl:min-w-[600px]  max-md:h-[321px] w-full xl:h-[599px]"
+                  src={mobile}
+                  className=""
                   alt="phoneHeader"
                 />
-                <div className=" absolute z-[2] -bottom-4 md:bottom-[80px] h-[165px] sm:h-[189px] right-0 xl:right-[-42px] inline-block bg-light-sky-gradient rounded-xl shadow-[0px_9px_13.9px_0_#0000001C]">
-                  <div className="relative z-[1] md:p-[16px_16px_12px_14px] p-2">
-                    <div className="flex items-center gap-[6px] lg:gap-3">
-                      <span>
-                        <LocationLogo />
-                      </span>
-                      <p className="text-lg lg:text-xl z-50 font-mukta relative leading-[30px] lg:leading-[33px] font-normal text-darkBlue">
-                        Geolocation found!
+                <div className=" absolute z-20  bg-white rounded-xl w-[164px] sm:w-[280px] h-[168px] p-[18px] sm:h-[197px]">
+                  <div className="flex flex-col">
+                    <div className="flex justify-between items-start">
+                      <p className="font-mukta font-bold text-2xl text-skyBlue">
+                        Need help?
                       </p>
+                      <Headphone />
                     </div>
-                    <a
-                      href="tel:+44633427390"
-                      className="font-semibold text-xl font-mukta text-darkBlue lg:text-2xl leading-[33px] lg:leading-[39px] mt-2"
-                    >
-                      +44 633 427 390
-                    </a>
-                    <p className=" max-md:mt-[6px] font-normal font-mukta text-sm lg:text-base max-w-[189px] md:max-w-[216px] leading-[21px] lg:leading-6 text-black">
-                      3 Succession Walk, Fish Island, London E3 2RX, United
-                      Kingdom
+                    <p className="text-darkBlue font-normal font-mukta text-base max-w-[198px]">
+                      Get help with technical, account and billing enquiries.
                     </p>
-                    <span className=" sm:mt-3 mt-[14px] font-mukta font-light text-xs sm:text-sm leading-[18px] sm:leading-[21px] text-end block"></span>
-                    <span className="absolute z-[-1] right-3 sm:right-5 bottom-[-6px]  lg:bottom-[-5px]">
-                      <p className="text-sm text-black font-mukta font-light">
-                        June 02,2024 17:34
-                      </p>
-                    </span>
+                    <button class="relative flex px-7 py-[14px] lg:py-4 sm:max-w-full w-full h-[51px] sm:h-[59px] mt-7 rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue text-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-skyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
+                      <span class="relative font-mukta rounded-[4px] capitalize text-base text-white font-normal">
+                        Customer Support
+                      </span>
+                    </button>
                   </div>
                 </div>
               </div>
