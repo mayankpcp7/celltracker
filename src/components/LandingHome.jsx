@@ -7,8 +7,11 @@ import {
   Logo,
   Logo2,
 } from "./common/Icons";
+import Rightvector from "../assets/images/home/webp/footer-vec.webp";
+import { Link } from "react-router-dom";
 
 const LandingHome = () => {
+  // navbar
   const [navBar, setnavBar] = useState(false);
   function showNav() {
     setnavBar(!navBar);
@@ -18,8 +21,9 @@ const LandingHome = () => {
   } else {
     document.body.classList.remove("max-md:overflow-hidden");
   }
+
   return (
-    <div className="bg-landing-sm-hero sm:bg-landing-hero relative z-[1] flex flex-col bg-no-repeat bg-cover bg-center lg:bg-full min-h-[800px]">
+    <div className="bg-landing-sm-hero sm:bg-landing-hero relative z-[1] flex flex-col bg-no-repeat bg-cover bg-center lg:bg-full min-h-[812px] sm:min-h-[800px]">
       {/* navbar */}
       <nav>
         <div className="max-w-[1164px] px-6 sm:px-3 mx-auto sm:mt-[7px]">
@@ -33,28 +37,28 @@ const LandingHome = () => {
               }`}
             >
               <li>
-                <a
+                <Link
                   href="/"
                   className="text-black md:text-white font-mukta text-base leading-[26.59px] font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/"
+                <Link
+                  href="/landing"
                   className="text-black md:text-white font-mukta text-base leading-[26.59px] font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
                 >
                   How It Works
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/"
                   className="text-black md:text-white font-mukta text-base leading-[26.59px] font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
                 >
                   Features
-                </a>
+                </Link>
               </li>
 
               <button className="font-mukta md:hidden mt-12  text-base leading-[26.59px] max-w-[315px] font-semibold text-white w-full h-[51px] rounded-[4px] !bg-darkBlue duration-300 ">
@@ -84,10 +88,10 @@ const LandingHome = () => {
       </nav>
 
       {/* header */}
-      <div className=" h-full mt-[66px] lg:mt-[104px]">
+      <div className=" h-full mt-[56px] lg:mt-[83px]">
         <div className="max-w-[1164px] w-full px-6 sm:px-3 mx-auto">
           <div className="flex flex-row flex-wrap -mx-3">
-            <div className="lg:w-1/2 w-full px-3 lg:mt-[71px]">
+            <div className="lg:w-1/2  w-full px-3 lg:mt-[71px]">
               <h1 className=" text-white max-lg:text-center text-[32px] sm:text-5xl lg:text-[52px] xl:text-[64px] leading-[37px] sm:leading-[49px] lg:leading-[64px] font-extrabold font-mukta">
                 Locate any phone,
                 <span className=" font-light"> anywhere, anytime</span>
@@ -140,20 +144,20 @@ const LandingHome = () => {
                   </select>
                 </div>
                 <input type="tell" className="outline-none w-[35%] sm:w-1/2" />
-                <button className=" bg-darkBlue -me-[1px] rounded font-semibold text-sm font-mukta md:text-base group text-white leading-[166%] py-[13.5px] px-[22.2px] flex items-center gap-1 hover:bg-linear-blue duration-300 relative border-transparent border-2  hover:border-dark-blue z-[1] after:absolute after:h-full after:w-1 after:top-0 after:skew-x-12 after:blur-[3px] overflow-hidden after:left-[-20%] after:bg-dark-blue ">
+                <button className=" bg-darkBlue -me-[1px] rounded font-semibold text-sm font-mukta md:text-base group text-white leading-[166%] py-[13.5px] px-[22.2px] flex items-center gap-1 hover:bg-linear-blue duration-300 ">
                   <LocationVector />
                   Locate
                 </button>
               </div>
             </div>
-            <div className="lg:w-1/2 w-full px-3 max-lg:mt-[68px]">
+            <div className="lg:w-1/2 w-full px-3 mt-[68px] lg:mt-0">
               <div className=" relative  max-lg:max-w-[600px] max-md:max-w-[322px] mx-auto z-[1]">
                 <img
                   src={DoubleMobile}
-                  className="xl:min-w-[600px]  max-md:h-[321px] w-full xl:h-[599px]"
+                  className="xl:min-w-[600px]   max-md:h-[321px] w-full xl:h-[599px]"
                   alt="phoneHeader"
                 />
-                <div className=" absolute z-[2] -bottom-4 md:bottom-[80px] h-[165px] sm:h-[189px] right-0 xl:right-[-42px] inline-block bg-light-sky-gradient rounded-xl shadow-[0px_9px_13.9px_0_#0000001C]">
+                <div className=" absolute overflow-hidden !z-[2] bg-white -bottom-4 md:bottom-[80px] h-[165px] sm:h-[189px] right-0 xl:right-[-42px]  bg-light-sky-gradient rounded-xl shadow-[0px_9px_13.9px_0_#0000001C]">
                   <div className="relative z-[1] md:p-[16px_16px_12px_14px] p-2">
                     <div className="flex items-center gap-[6px] lg:gap-3">
                       <span>
@@ -173,12 +177,17 @@ const LandingHome = () => {
                       3 Succession Walk, Fish Island, London E3 2RX, United
                       Kingdom
                     </p>
-                    <span className=" sm:mt-3 mt-[14px] font-mukta font-light text-xs sm:text-sm leading-[18px] sm:leading-[21px] text-end block"></span>
-                    <span className="absolute z-[-1] right-3 sm:right-5 bottom-[-6px]  lg:bottom-[-5px]">
-                      <p className="text-sm text-black font-mukta font-light">
+
+                    <div className="flex items-center justify-between mt-6">
+                      <img
+                        className="max-w-[22px] sm:max-w-[37px] rotate-[180deg] left-0 sm:left-[-4px]    absolute "
+                        src={Rightvector}
+                        alt="vector"
+                      />
+                      <p className="text-sm text-black font-mukta absolute right-4  font-light">
                         June 02,2024 17:34
                       </p>
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>

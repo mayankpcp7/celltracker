@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import mobile from "../assets/images/home/webp/hero-phone.png";
+import mobile from "../assets/images/home/webp/hero-phone.png"
 import {
   Headphone,
   IndiaFlagIcon,

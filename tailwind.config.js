@@ -26,6 +26,7 @@ module.exports = {
       },
       lineHeight: {
         full: "100%",
+        xsm: "116%",
         sm: "120%",
         md: "150%",
         lg: "166%",
@@ -36,8 +37,8 @@ module.exports = {
       },
       backgroundImage: {
         "light-sky-gradient":
-          "linear-gradient(0deg, #FFFFFF, #FFFFFF),linear-gradient(7.95deg, rgba(0, 181, 216, 0.05) -3.4%, rgba(0, 0, 128, 0.05) 114.66%);",
-
+      "linear-gradient(7.95deg, rgba(0, 181, 216, 0.05) -3.4%, rgba(0, 0, 128, 0.05) 114.66%);",
+        
         "linear-blue":
           "linear-gradient(7.95deg, #00B5D8 -3.4%, #000080 114.66%)",
         "landing-hero":

@@ -1,16 +1,23 @@
 import React from 'react'
 import  { BlueHeading } from './common/CommonHeading'
 import { LocationIcon, MessageIcon, PhoneBookIcon, ProcessArrow } from './common/Icons'
+import Rightvector from "../assets/images/home/webp/footer-vec.webp";
+
 
 const HowItWork = () => {
     return (
         <>
-            <div className="max-w-[1164px] mx-auto px-6 sm:px-3">
-                
-                <div className="mt-[94px] md:mt-[131px] mb-[34px] md:mb-14">
+            <div className="max-w-[1164px] mx-auto px-6 sm:px-3 relative">
+            <img
+        className="max-w-[41px] sm:max-w-[106px]  md:hidden top-[-2%] rotate-[180deg] left-0 2xl:left-[-11.8%]  absolute "
+        src={Rightvector}
+        alt="vector"
+      />
+                <div className="mt-[94px] xl:mt-[131px] mb-[34px] md:mb-14">
                     <BlueHeading headingText="How it" boldText="works" />
-                    <BlueHeading SubPera="Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi sit elit rhoncus vestibulum fames libero id." />
-
+                    <div className="px-6">
+   <BlueHeading  SubPera="Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi sit elit rhoncus vestibulum fames libero id." />
+   </div>
                 </div>
                <div className="flex flex-wrap justify-center pb-[94px] sm:pb-[45px]  px-9 xl:px-0">
                  
@@ -20,7 +27,7 @@ const HowItWork = () => {
                 <h3 className="text-xl sm:text-2xl font-normal text-center font-mukta transition-all mt-[14px] duration-200 ease-in-out group-hover:text-white leading-sm">
                 Provide target phone number
                 </h3>
-                <p className="font-normal mt-[6px]  transition-all px-3 text-center duration-200 ease-in-out group-hover:text-lightskyBlue text-sm sm:text-base leading-md font-mukta text-lightBlack">
+                <p className="font-normal mt-[6px]  transition-all px-3 lg:px-2 text-center duration-200 ease-in-out group-hover:text-lightskyBlue text-sm sm:text-base leading-md font-mukta text-lightBlack">
                 Enter the mobile number you want to locate in the provided field.
                 </p>
                 </div>
