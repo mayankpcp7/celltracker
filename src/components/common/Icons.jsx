@@ -1151,7 +1151,7 @@ export const SimpleUse = () => {
 export const BackArrow = () => {
   return (
     <svg
-      className="fixed z-[49] lg:max-w-[60px] md:max-w-[50px] max-w-[45px] bottom-4 end-4 cursor-pointer"
+      className="fixed animate-bounce z-[49] lg:max-w-[60px] md:max-w-[50px] max-w-[45px] bottom-4 end-4 cursor-pointer"
       width="84"
       height="84"
       viewBox="0 0 84 84"

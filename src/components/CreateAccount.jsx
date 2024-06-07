@@ -211,7 +211,7 @@ const CreateAccount = () => {
                 </div>
               </form>
               <button
-                className="bg-darkBlue text-white font-mukta font-normal leading-md h-[51px] sm:h-[59px] flex items-center justify-center py-4 rounded-[4px] mt-9 sm:mt-12"
+                className="bg-darkBlue hover:bg-skyBlue duration-300 transition-all text-white font-mukta font-normal leading-md h-[51px] sm:h-[59px] flex items-center justify-center py-4 rounded-[4px] mt-9 sm:mt-12"
                 type="submit"
               >
                 Buy Now (50C)

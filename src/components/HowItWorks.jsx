@@ -10,12 +10,12 @@ const HowItWorks = () => {
     <>
       <div className="max-w-[1188px] mx-auto px-6 py-[68px] sm:pt-14 sm:pb-24 md:py-20 lg:pb-12 lg:pt-[104px] relative ">
         <img
-          className="absolute start-0 top-[12%] sm:start-[-11%] sm:top-[21%] max-w-[41px] sm:max-w-[106px]"
+          className="absolute start-0 animate-pulse pointer-events-none top-[12%] sm:start-[-11%] sm:top-[21%] max-w-[41px] sm:max-w-[106px]"
           src={leftvector}
           alt="vector"
         />
         <img
-          className="absolute end-0 sm:end-[-11%] bottom-[-2%] max-w-[41px] sm:max-w-[106px]"
+          className="absolute end-0 animate-pulse pointer-events-none sm:end-[-11%] bottom-[-2%] max-w-[41px] sm:max-w-[106px]"
           src={rightvector}
           alt="vector"
         />

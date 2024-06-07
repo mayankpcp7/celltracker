@@ -8,7 +8,7 @@ const Preloader = () => {
     <>
       <div
         id="none"
-        className="backdrop-blur-lg h-full w-full fixed z-50 top-0 start-0 flex items-center justify-center h-ful"
+        className="backdrop-blur-lg h-full z-[1000] w-full fixed top-0 start-0 flex items-center justify-center h-ful"
       >
         <div class="container flex items-center justify-center h-full flex-col">
           <div class="wrapper scale-150">
