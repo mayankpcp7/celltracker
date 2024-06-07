@@ -11,7 +11,7 @@ const Join = () => {
         src={joinlayer}
         alt="joinlayer"
       />
-      <div className="bg-join-gradient bg-cover bg-center bg-no-repeat pt-24 sm:pt-48 pb-20 sm:pb-36">
+      <div className="bg-join-gradient bg-cover bg-center bg-no-repeat pt-24 sm:pt-44 pb-20 sm:pb-36">
         <div className="max-w-[1188px] mx-auto px-6">
           <h2 className="text-[28px] sm:text-4xl md:text-[40px] max-w-[300px] sm:max-w-[640px] mx-auto lg:text-5xl text-white leading-full text-center font-light font-mukta ">
             Join <span className="font-extrabold"> 70,000+ companies </span>

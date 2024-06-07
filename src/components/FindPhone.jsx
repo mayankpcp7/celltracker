@@ -5,7 +5,7 @@ import rightvec from "../assets/images/home/webp/right-vec.webp";
 const FindPhone = () => {
   return (
     <>
-      <div className="max-w-[1164px] px-3 mx-auto xs:pt-[250px] pt-[218px] sm:pt-[217px] relative">
+      <div className="max-w-[1164px] px-3 mx-auto xs:pt-[250px] sm:pt-[218px] relative">
         <img
           className="absolute start-[-12%] sm:block hidden max-w-[106px] bottom-[30%]"
           src={rightvec}

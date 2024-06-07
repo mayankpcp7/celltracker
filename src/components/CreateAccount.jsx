@@ -14,7 +14,7 @@ import validcardicon from "../assets/images/home/svg/valid-card.svg";
 import calendericon from "../assets/images/home/svg/calender.svg";
 import smlayer from "../assets/images/home/webp/create-account-layer.webp";
 import rightvec from "../assets/images/home/webp/right-vec.webp";
-import leftvec from "../assets/images/home/webp/footer-vec.png"
+import leftvec from "../assets/images/home/webp/footer-vec.webp"
 const CreateAccount = () => {
   return (
     <>
