@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import DoubleMobile from "../assets/images/landing/webp/double-mobile-location-tarcking.webp";
-import { Link } from "react-router-dom";
 import {
   IndiaFlagIcon,
   LocationLogo,
@@ -9,6 +8,7 @@ import {
   Logo2,
 } from "./common/Icons";
 import Rightvector from "../assets/images/home/webp/footer-vec.webp";
+import { Link } from "react-router-dom";
 
 const LandingHome = () => {
   // navbar
@@ -17,9 +17,9 @@ const LandingHome = () => {
     setnavBar(!navBar);
   }
   if (navBar) {
-    document.body.classList.add("max-md:overflow-hidden");
+    document.body.classList.add("overflow-hidden");
   } else {
-    document.body.classList.remove("max-md:overflow-hidden");
+    document.body.classList.remove("overflow-hidden");
   }
 
   return (
@@ -27,7 +27,7 @@ const LandingHome = () => {
       {/* navbar */}
       <nav>
         <div className="max-w-[1164px] px-6 sm:px-3 mx-auto sm:mt-[7px]">
-          <div className="flex justify-between pt-[32px] pb-[10px] sm:h-[100px] items-center">
+          <div className="flex justify-between pt-[32px] lg:pt-0 pb-[10px] lg:pb-0  items-center">
             <a href="/" className="relative z-[4]" aria-label="logo">
               {navBar ? <Logo2 /> : <Logo />}
             </a>
@@ -47,7 +47,7 @@ const LandingHome = () => {
               <li>
                 <Link
                   to="/"
-                  className="text-black md:text-white whitespace-nowrap font-mukta text-base  leading-[26.59px] font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
+                  className="text-black md:text-white font-mukta text-base leading-[26.59px] font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
                 >
                   How It Works
                 </Link>
@@ -61,13 +61,18 @@ const LandingHome = () => {
                 </Link>
               </li>
 
-              <button className="relative flex px-7 py-[14px] mt-[115px] md:mt-0 lg:py-4 sm:max-w-[78px] lg:max-w-[98px] w-full h-[51px] lg:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue md:bg-white text-dark-Blue transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-skyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
-                <span className="relative font-mukta whitespace-nowrap rounded-[4px] capitalize text-base text-white md:text-darkBlue font-semibold">
-                  Log In
+              <button class="relative md:hidden w-full sm:max-w-[98px] flex px-7 py-[14px] lg:py-4 h-[51px] sm:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue text-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-skyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
+                <span class="relative font-mukta rounded-[4px] capitalize text-base text-white font-normal">
+                  Log in
                 </span>
               </button>
             </ul>
 
+            <button className="relative hidden md:flex px-7 py-[14px] mt-[115px] md:mt-0 lg:py-4 sm:max-w-[150px] lg:max-w-[98px] w-full h-[51px] lg:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue md:bg-white text-dark-Blue transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-lightskyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
+              <span className="relative font-mukta whitespace-nowrap rounded-[4px] capitalize text-base text-white md:text-darkBlue font-semibold">
+                Log in
+              </span>
+            </button>
             <button onClick={showNav} className="md:hidden relative z-[4]">
               {navBar ? (
                 <div className="flex md:hidden flex-col relative z-50 justify-between w-[24px] h-[24px] cursor-pointer">
@@ -143,11 +148,9 @@ const LandingHome = () => {
                   </select>
                 </div>
                 <input type="tell" className="outline-none w-[35%] sm:w-1/2" />
-                <button class="relative flex py-[14px] max-w-[107px] sm:max-w-[112px] w-full h-[51px] sm:h-[55px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue text-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-skyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
-                  <span class="relative gap-[5px] items-center flex font-mukta rounded-[4px] capitalize text-base text-white font-normal">
-                    <LocationVector />
-                    Locate
-                  </span>
+                <button className=" bg-darkBlue -me-[1px] rounded font-semibold text-sm font-mukta md:text-base group text-white leading-[166%] py-[13.5px] px-[22.2px] flex items-center gap-1 hover:bg-linear-blue duration-300 ">
+                  <LocationVector />
+                  Locate
                 </button>
               </div>
             </div>
@@ -161,9 +164,12 @@ const LandingHome = () => {
                 <div className=" absolute overflow-hidden !z-[2] bg-white -bottom-4 md:bottom-[80px] h-[165px] sm:h-[189px] right-0 xl:right-[-42px]  bg-light-sky-gradient rounded-xl shadow-[0px_9px_13.9px_0_#0000001C]">
                   <div className="relative z-[1] md:p-[16px_16px_12px_14px] p-2">
                     <div className="flex items-center gap-[6px] lg:gap-3">
-                      <span>
-                        <LocationLogo />
-                      </span>
+                     <button class="relative flex py-[14px] max-w-[107px] sm:max-w-[112px] w-full h-[51px] sm:h-[55px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue text-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-skyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
+                  <span class="relative gap-[5px] items-center flex font-mukta rounded-[4px] capitalize text-base text-white font-normal">
+                    <LocationVector />
+                    Locate
+                  </span>
+                </button>
                       <p className="text-lg lg:text-xl z-50 font-mukta relative leading-[30px] lg:leading-[33px] font-normal text-darkBlue">
                         Geolocation found!
                       </p>
