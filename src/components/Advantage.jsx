@@ -8,8 +8,8 @@ import smlayer from "../assets/images/home/webp/header-bottom-layer.webp"
 const Advantage = () => {
   return (
     <>
-      <img className="w-full relative z-[60] xs:hidden -mt-[15%] sm:-mt-[10%]" src={layer} alt="layer" />
-      <img className="w-full relative z-[60] hidden xs:block min-h-[97px] -mt-[15%] sm:-my-[10%]" src={layer} alt="layer" />
+      <img className="w-full relative z-[60] xs:hidden -mt-[18%] sm:-mt-[10%]" src={layer} alt="layer" />
+      <img className="w-full relative z-[60] hidden xs:block min-h-[97px] -mt-[15%] sm:-my-[12.5%]" src={layer} alt="layer" />
       <div className="max-w-[1188px] mt-16 z-[70] px-6 mx-auto relative">
         <img
           className="absolute z-0 start-[-10.5%] sm:max-w-[106px] max-w-[41px] top-[8%]"

@@ -5,14 +5,14 @@ import rightvec from "../assets/images/home/webp/right-vec.webp";
 const FindPhone = () => {
   return (
     <>
-      <div className="max-w-[1164px] px-3 mx-auto pt-[248px] relative">
+      <div className="max-w-[1164px] px-3 mx-auto xs:pt-[250px] pt-[218px] sm:pt-[217px] relative">
         <img
-          className="absolute start-[-12%] max-w-[106px] bottom-[30%]"
+          className="absolute start-[-12%] sm:block hidden max-w-[106px] bottom-[30%]"
           src={rightvec}
           alt="vec"
         />
         <div className="rounded-[12px]">
-          <div className="flex md:flex-row flex-col px-4 bg-blue-gradient bg-start sm:bg-center bg-cover bg-no-repeat  items-center py-12 sm:py-[60px]  lg:py-[98px] rounded-[12px]">
+          <div className="flex md:flex-row flex-col px-4 bg-sm-gradient sm:bg-blue-gradient bg-start sm:bg-center bg-full position-center sm:bg-cover bg-no-repeat  items-center py-12 sm:py-[60px]  lg:py-[98px] rounded-[12px]">
             <img
               className="min-w-[370px] max-w-[400px] min-h-[354px] sm:max-w-[400px] lg:max-w-[580px] xl:max-w-[606px] -mt-[56%] sm:-mt-[24%] md:-mb-[20%] w-full"
               src={mobile}

@@ -14,6 +14,7 @@ import validcardicon from "../assets/images/home/svg/valid-card.svg";
 import calendericon from "../assets/images/home/svg/calender.svg";
 import smlayer from "../assets/images/home/webp/create-account-layer.webp";
 import rightvec from "../assets/images/home/webp/right-vec.webp";
+import leftvec from "../assets/images/home/webp/footer-vec.png"
 const CreateAccount = () => {
   return (
     <>
@@ -26,9 +27,14 @@ const CreateAccount = () => {
         className=" relative hidden sm:block z-10 w-full -mt-16 sm:-mt-20 lg:-mt-28"
         src={toplayer}
       />
-      <div className="max-w-[1188px] pt-[54px] md:pt-[98px] px-6 mx-auto relative">
+      <div className="max-w-[1188px] pt-[54px] sm:pt-[30px] lg:pt-[98px] px-6 mx-auto relative">
         <img
-          className="max-w-[41px] sm:max-w-[106px] end-[-1%] bottom-[25%] absolute md:end-[-13%] md:bottom-[10%]"
+          className="max-w-[41px] sm:max-w-[106px] pointer-events-none end-0 -z-0 bottom-[-6%] md:bottom-[13%] absolute md:end-[-10%]"
+          src={leftvec}
+          alt="vector"
+        />
+        <img
+          className="max-w-[41px] sm:max-w-[106px] pointer-events-none -z-0 top-5 start-0 md:top-[15%] absolute md:start-[-10%]"
           src={rightvec}
           alt="vector"
         />
@@ -37,7 +43,7 @@ const CreateAccount = () => {
           className="text-sm sm:text-base"
           SubPera="Join now and protect your family's phones"
         />
-        <div className="flex md:flex-row flex-col mt-8 sm:mt-[52px] lg:mt-[72px] items-start md:items-center">
+        <div className="flex md:flex-row flex-col relative z-20 mt-8 sm:mt-[52px] lg:mt-[72px] items-start md:items-center">
           <div className="flex flex-col">
             <h3 className="text-darkBlue font-mukta text-2xl sm:text-[32px] leading-sm font-light">
               Get a <span className="font-extrabold "> 24 hour </span> trial!

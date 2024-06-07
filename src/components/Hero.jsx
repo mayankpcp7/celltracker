@@ -34,7 +34,7 @@ const Hero = () => {
       {/* navbar */}
       <nav>
         <div className="max-w-[1164px] px-6 sm:px-3 mx-auto">
-          <div className="flex justify-between pt-[32px] lg:pt-0 pb-[10px] sm:h-[100px] items-center">
+          <div className="flex justify-between pt-[32px] md:pt-0 md:my-[10px] items-center">
             <a href="/" className="relative z-[50]" aria-label="logo">
               {navBar ? (
                 <Logo2 className="Z-[50]" />
@@ -64,7 +64,7 @@ const Hero = () => {
                   Log in
                 </Link>
               </li>
-              <button className="relative flex px-7 py-[14px] mt-[115px] md:mt-0 lg:py-4 sm:max-w-[150px] lg:max-w-[182px] w-full h-[51px] lg:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue md:bg-white text-dark-Blue transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-skyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
+              <button className="relative flex px-7 py-[14px] mt-[115px] md:mt-0 lg:py-4 sm:max-w-[150px] lg:max-w-[182px] w-full h-[51px] lg:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue md:bg-white text-dark-Blue transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-lightskyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
                 <span className="relative font-mukta whitespace-nowrap rounded-[4px] capitalize text-base text-white md:text-darkBlue font-semibold">
                   Create an Account
                 </span>
@@ -89,7 +89,7 @@ const Hero = () => {
       </nav>
 
       {/* header */}
-      <div className="h-full mt-[66px] lg:mt-[104px]">
+      <div className="h-full mt-[63px]">
         <div className="max-w-[1164px] mb-0 xs:mb-12 lg:mb-16 w-full px-6 mx-auto">
           <div className="flex flex-row flex-wrap -mx-3">
             <div className="lg:w-1/2 w-full px-3 lg:mt-[71px]">

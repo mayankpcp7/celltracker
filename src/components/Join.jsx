@@ -11,13 +11,13 @@ const Join = () => {
         src={joinlayer}
         alt="joinlayer"
       />
-      <div className="bg-join-gradient bg-cover bg-center bg-no-repeat pt-24 sm:pt-48 pb-20 sm:pb-40">
+      <div className="bg-join-gradient bg-cover bg-center bg-no-repeat pt-24 sm:pt-48 pb-20 sm:pb-36">
         <div className="max-w-[1188px] mx-auto px-6">
           <h2 className="text-[28px] sm:text-4xl md:text-[40px] max-w-[300px] sm:max-w-[640px] mx-auto lg:text-5xl text-white leading-full text-center font-light font-mukta ">
             Join <span className="font-extrabold"> 70,000+ companies </span>
             doing time tracking the easy way
           </h2>
-          <div className="flex md:flex-row flex-col-reverse gap-10 md:gap-0 items-center md:items-end justify-center pt-16 md:mt-[109px]">
+          <div className="flex md:flex-row flex-col-reverse gap-10 md:gap-0 items-center md:items-end justify-center pt-16 md:pt-0 md:mt-[109px]">
             <div className="flex flex-col border border-borderGrey md:-me-4 sm:items-start shadow-join-card  w-full max-w-[527px] md:max-w-[467px] rounded-tl-xl bg-white rounded-br-xl px-6 py-[75px] sm:p-6 lg:p-[34px]">
               <h2 className="text-darkBlue font-mukta text-2xl sm:text-3xxl font-normal leading-sm">
                 Cell Tracker
