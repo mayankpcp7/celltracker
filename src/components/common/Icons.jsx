@@ -1,3 +1,4 @@
+
 export const RealLoactionIcon = () => {
   return (
     <svg
@@ -80,7 +81,7 @@ export const CompatibleIcon = () => {
     </svg>
   );
 };
-//--------------AllNetworksIcon-------------------
+//---------------------------------------------------------AllNetworksIcon----------------------------------------------------
 export const AllNetworksIcon = () => {
   return (
     <svg
@@ -903,6 +904,7 @@ export const QuickIcon = () => {
     </svg>
   );
 };
+// ------------------------------------------------------------- Hero Card ------------------------------------------------
 export const Headphone = () => {
   return (
     <svg

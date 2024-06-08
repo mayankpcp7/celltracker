@@ -11,13 +11,17 @@ import { BackTop } from "../components/common/Icons";
 const Home = () => {
   return (
     <>
-      <Hero/>
-      <Advantage/>
+      <Hero />
+      <Advantage />
       <HowItWorks />
       <Join />
       <CreateAccount />
       <FindPhone />
-      <Footer />
+      <Footer
+        firstlink="Help"
+        secondlink="Contact us"
+        thirdlink="Found Phone"
+      />
     </>
   );
 };

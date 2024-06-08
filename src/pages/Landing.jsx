@@ -20,8 +20,7 @@ const Landing = () => {
       <UniversalPrivacy />
       <FindAnyone />
       <HowItWork />
-      <Footer />
-     
+      <Footer firstlink="Home" secondlink="How It Works" thirdlink="Features" />
     </div>
   );
 };

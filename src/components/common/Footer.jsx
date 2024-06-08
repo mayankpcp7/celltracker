@@ -6,20 +6,19 @@ import facebook from "../../assets/images/home/svg/facebook.svg";
 import twitter from "../../assets/images/home/svg/twitter.svg";
 import vector from "../../assets/images/home/webp/footer-vec.webp";
 import { useLocation } from "react-router-dom";
-const Footer = () => {
+const Footer = ({ firstlink, secondlink, thirdlink }) => {
   const getCurrentYear = () => new Date().getFullYear();
   const location = useLocation();
   return (
     <div className="max-w-[1140px] relative mx-auto px-3 md:mt-20 mt-[58px] sm:mt-[64px] lg:mt-[102px]">
-       {location.pathname === '/landing' && (
+      {location.pathname === "/landing" && (
         <img
           className="max-w-[41px] sm:max-w-[106px] bottom-16 md:top-[-120%] right-0 md:rotate-[180deg] md:left-0 xl:left-[-13%] absolute "
           src={vector}
           alt="vector"
         />
-        
       )}
-         {location.pathname === '/home' && (
+      {location.pathname === "/home" && (
         <img
           className="max-w-[41px] sm:max-w-[106px] end-[-1%] bottom-[25%] absolute md:end-[-13%] md:bottom-[10%]"
           src={vector}
@@ -41,7 +40,7 @@ const Footer = () => {
                 href="#"
                 className="text-grey font-mukta text-lightBlack font-normal hover:text-darkBlue duration-300 text-base"
               >
-                Help
+                {firstlink}
               </a>
             </li>
             <li>
@@ -49,7 +48,7 @@ const Footer = () => {
                 href="#"
                 className="text-grey font-mukta text-lightBlack font-normal hover:text-darkBlue duration-300 text-base"
               >
-                Contact
+                {secondlink}
               </a>
             </li>
             <li>
@@ -57,7 +56,7 @@ const Footer = () => {
                 href="#"
                 className="text-grey font-mukta text-lightBlack font-normal hover:text-darkBlue duration-300 text-base"
               >
-                Found Phone
+                {thirdlink}
               </a>
             </li>
           </ul>
@@ -93,7 +92,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <span className="w-full h-[1px] flex bg-darkBlue mt-[58px] md:mt-12"></span>
+      <span className="w-full h-[0.5px] flex bg-darkBlue mt-[58px] md:mt-12"></span>
       <p className="text-center pb-5 pt-[18px] sm:py-4 leading-md md:text-base text-xs sm:text-sm text-lightBlack font-normal font-mukta">
         © {getCurrentYear()} Cell Tracker. All Rights Reserved.
       </p>
