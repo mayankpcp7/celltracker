@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import mobile from "../assets/images/home/webp/hero-phone.png";
+import mobile from "../../assets/images/home/webp/hero-phone.png";
 import {
   Headphone,
   IndiaFlagIcon,
@@ -7,9 +7,10 @@ import {
   Logo,
   Logo2,
   QuickIcon,
-} from "./common/Icons";
+} from "../common/Icons";
 import { Link } from "react-router-dom";
-
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 const Hero = () => {
   const [navBar, setNavBar] = useState(false);
 
@@ -28,7 +29,14 @@ const Hero = () => {
       document.body.classList.remove("overflow-hidden");
     };
   }, [navBar]);
+  // country code
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [countryCode, setCountryCode] = useState("91");
 
+  const handleOnChange = (value, country) => {
+    setPhoneNumber(value);
+    setCountryCode(country.dialCode);
+  };
   return (
     <div className="bg-hero relative z-[1] flex flex-col bg-no-repeat bg-cover bg-center lg:bg-full min-h-[810px]">
       {/* navbar */}
@@ -64,8 +72,8 @@ const Hero = () => {
                   Log in
                 </Link>
               </li>
-              <button className="relative flex px-7 py-[14px] mt-[115px] md:mt-0 lg:py-4 sm:max-w-[150px] lg:max-w-[182px] w-full h-[51px] lg:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue md:bg-white text-dark-Blue transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-lightskyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
-                <span className="relative font-mukta whitespace-nowrap rounded-[4px] capitalize text-base text-white md:text-darkBlue font-semibold">
+              <button className="relative  flex px-7 py-[14px] nav_button mt-[115px] md:mt-0 lg:py-4 sm:max-w-[150px] lg:max-w-[182px] w-full h-[51px] lg:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue md:bg-white text-dark-Blue transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-darkBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
+                <span className="relative create_button_text font-mukta whitespace-nowrap rounded-[4px] capitalize text-base text-white sm:text-darkBlue font-semibold">
                   Create an Account
                 </span>
               </button>
@@ -101,54 +109,18 @@ const Hero = () => {
                 Add phones to your account & track them when neededAdd phones to
                 your account & track them when needed
               </p>
-              <div className=" max-lg:mx-auto bg-white rounded flex items-center justify-between ps-2.5 max-w-[448px] mt-6">
-                <div className=" flex items-center gap-[7px] ">
-                  <span>
-                    <IndiaFlagIcon />
-                  </span>
-                  <select
-                    className="outline-none text-sm leading-[23px] font-mukta md:leading-[26px] md:text-base"
-                    name="number"
-                    id="number"
-                  >
-                    <option
-                      value="91"
-                      className="flex font-mukta items-center gap-2 "
-                    >
-                      +91
-                    </option>
-                    <option
-                      value="01"
-                      className="flex font-mukta items-center gap-2 "
-                    >
-                      +01
-                    </option>
-                    <option
-                      value="92"
-                      className="flex font-mukta items-center gap-2 "
-                    >
-                      +92
-                    </option>
-                    <option
-                      value="02"
-                      className="flex font-mukta items-center gap-2 "
-                    >
-                      +02
-                    </option>
-                    <option
-                      value="21"
-                      className="flex font-mukta items-center gap-2 "
-                    >
-                      +21
-                    </option>
-                  </select>
-                </div>
-                <input type="tell" className="outline-none w-[35%] sm:w-1/2" />
-                <button class="relative flex py-[14px] max-w-[107px] sm:max-w-[112px] w-full h-[51px] sm:h-[55px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue text-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-skyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
-                  <span class="relative gap-[5px] items-center flex font-mukta rounded-[4px] capitalize text-base text-white font-normal">
-                    <LocationVector />
-                    Locate
-                  </span>
+              <div className="bg-white rounded shadow-inputNumber max-xl:mx-auto flex  h-[51px] md:h-[55px] items-center justify-between ps-2.5 max-w-[448px] mt-6">
+                <PhoneInput
+                  country={"in"}
+                  value={phoneNumber}
+                  onChange={(phone, country) => handleOnChange(phone, country)}
+                  inputClass="outline-none text-sm leading-[23px] font-mukta md:leading-[26px] md:text-baseoutline-none w-[35%] sm:w-1/2"
+                  containerClass="phone-input-container"
+                  buttonClass="country-code-dropdown "
+                />
+                <button className="hover:border-darkBlue border locate_button border-darkBlue group  hover:text-darkBlue hover:bg-white  bg-darkBlue -me-[1px] rounded font-semibold text-sm md:text-base group text-white py-[14.5px] px-[22.2px] flex items-center gap-1  duration-300 ">
+                  <LocationVector />
+                  Locate
                 </button>
               </div>
             </div>
@@ -170,8 +142,8 @@ const Hero = () => {
                     <p className="text-darkBlue font-normal font-mukta text-sm sm:text-base leading-md max-w-[198px]">
                       Get help with technical, account and billing enquiries.
                     </p>
-                    <button className="relative flex px-[18px] sm:px-7 py-2 sm:py-[14px] lg:py-4 sm:max-w-full w-full h-[39px] sm:h-[59px] mt-3 sm:mt-3 rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue text-white transition-all before:absolute before:h-0 before:w-0 before:rounded-[4px] before:bg-skyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
-                      <span className="relative font-mukta rounded-[4px] capitalize text-sm sm:text-base text-white font-normal">
+                    <button className="relative locate_button border border-darkBlue flex px-[18px] sm:px-7 blue_button py-2 sm:py-[14px] lg:py-4 sm:max-w-full w-full h-[39px] sm:h-[59px] mt-3 sm:mt-3 rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue text-white transition-all before:absolute before:h-0 before:w-0 before:rounded-[4px] before:bg-white before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
+                      <span className="relative locate font-mukta rounded-[4px] capitalize text-sm sm:text-base text-white font-normal">
                         Customer Support
                       </span>
                     </button>

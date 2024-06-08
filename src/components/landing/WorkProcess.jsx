@@ -1,14 +1,14 @@
 import React from "react";
-import { BlueHeading } from "./common/CommonHeading";
+import { BlueHeading } from "../common/CommonHeading";
 import {
   LocationIcon,
   MessageIcon,
   PhoneBookIcon,
   ProcessArrow,
-} from "./common/Icons";
-import Rightvector from "../assets/images/home/webp/footer-vec.webp";
+} from "../common/Icons";
+import Rightvector from "../../assets/images/home/webp/footer-vec.webp";
 
-const HowItWork = () => {
+const WorkProcess = () => {
   return (
     <>
       <div className="max-w-[1164px] mx-auto px-6 sm:px-3 relative">
@@ -42,6 +42,9 @@ const HowItWork = () => {
             <span className="md:absolute rotate-[90deg] md:rotate-0 m-12 mt-6 sm:mt-16 md:mt-0 top-[10%] sm:top-[15%]">
               <ProcessArrow />
             </span>
+            <span className="absolute rotate-[90deg] hidden md:block xl:hidden bottom-20">
+              <ProcessArrow />
+            </span>
           </div>
           <div className="w-full md:w-[40%] lg:w-[28%] xl:w-[22%] flex justify-center">
             <div className="flex flex-col max-w-[267px] min-h-[233px] md:min-h-[298px] pt-[27px] items-center">
@@ -54,7 +57,7 @@ const HowItWork = () => {
               <p className="font-normal mt-[6px] xl:px-4  transition-all text-center duration-200 ease-in-out group-hover:text-lightskyBlue text-sm sm:text-base leading-md font-mukta text-lightBlack">
                 Create a message that will make them approve access to their
                 location. You can always choose the one by default. Specify
-                sender name.{" "}
+                sender name.
               </p>
             </div>
           </div>
@@ -73,7 +76,7 @@ const HowItWork = () => {
               </h3>
               <p className="font-normal mt-[6px] transition-all text-center duration-200 ease-in-out group-hover:text-lightskyBlue text-sm sm:text-base leading-md font-mukta text-lightBlack">
                 Get notification as soon as GEOfinder locates the pesron on a
-                map. View their accurate position.{" "}
+                map. View their accurate position.
               </p>
             </div>
           </div>
@@ -83,4 +86,4 @@ const HowItWork = () => {
   );
 };
 
-export default HowItWork;
+export default WorkProcess;

@@ -1,13 +1,13 @@
 import React from "react";
-import { JoinCheck } from "./common/Icons";
-import joinlayer from "../assets/images/home/webp/join-layer.webp";
-import smlayer from "../assets/images/home/webp/join-sm-layer.webp";
+import { JoinCheck } from "../common/Icons";
+import joinlayer from "../../assets/images/home/webp/join-layer.webp";
+import smlayer from "../../assets/images/home/webp/join-sm-layer.webp";
 const Join = () => {
   return (
     <>
       <img className="w-full sm:hidden -mb-[10%]" src={smlayer} alt="layer" />
       <img
-        className="w-full -mb-22 md:-mb-20  sm:block hidden"
+        className="w-full -mb-22 md:-mb-20 min-[1930px]:max-h-[400px] min-[1930px]:-my-[1.5%] sm:block hidden"
         src={joinlayer}
         alt="joinlayer"
       />
@@ -43,8 +43,8 @@ const Join = () => {
                   free forever
                 </span>
               </p>
-              <button class="relative flex px-7 py-[14px] lg:py-4 sm:max-w-[204px] w-full h-[51px] sm:h-[59px] mt-7 rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue text-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-skyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
-                <span class="relative font-mukta rounded-[4px] capitalize text-base text-white font-normal">
+              <button class="relative  locate_button border border-darkBlue flex px-7 py-[14px] lg:py-4 sm:max-w-[204px] w-full h-[51px] sm:h-[59px] mt-7 rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue text-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-white before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
+                <span class="relative font-mukta locate rounded-[4px] capitalize text-base text-white font-normal">
                   Start your free trial
                 </span>
               </button>
@@ -89,8 +89,8 @@ const Join = () => {
               </p>
 
               <div className="flex gap-2 lg:gap-0 lg:flex-row flex-col items-center mt-7">
-                <button class="relative w-full flex px-7 py-[14px] lg:py-4 h-[51px] sm:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue text-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-skyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
-                  <span class="relative font-mukta rounded-[4px] capitalize text-base text-white font-normal">
+                <button class="relative locate_button border border-darkBlue w-full flex px-7 py-[14px] lg:py-4 h-[51px] sm:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue text-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-white before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
+                  <span class="relative locate font-mukta rounded-[4px] capitalize text-base text-white font-normal">
                     30-Day Free Trial
                   </span>
                 </button>

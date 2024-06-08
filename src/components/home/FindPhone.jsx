@@ -1,16 +1,16 @@
 import React from "react";
-import mobile from "../assets/images/home/webp/find-phone.webp";
-import { WhiteHeading } from "./common/CommonHeading";
-import rightvec from "../assets/images/home/webp/right-vec.webp";
+import mobile from "../../assets/images/home/webp/find-phone.webp";
+import { WhiteHeading } from "../common/CommonHeading";
+import rightvec from "../../assets/images/home/webp/right-vec.webp";
 const FindPhone = () => {
   return (
-    <>
-      <div className="max-w-[1164px] px-3 mx-auto pt-[250px] sm:pt-[218px] relative">
-        <img
-          className="absolute start-[-12%] sm:block hidden max-w-[106px] bottom-[30%]"
-          src={rightvec}
-          alt="vec"
-        />
+    <div className="relative">
+      <img
+        className="absolute start-0 sm:block hidden max-w-[106px] bottom-[30%]"
+        src={rightvec}
+        alt="vec"
+      />
+      <div className="max-w-[1164px] px-3 mx-auto pt-[250px] xs:pt-[350px] sm:pt-[218px] relative">
         <div className="rounded-[12px]">
           <div className="flex md:flex-row flex-col px-4 bg-sm-gradient sm:bg-blue-gradient bg-start sm:bg-center bg-full position-center sm:bg-cover bg-no-repeat  items-center py-12 sm:py-[60px]  lg:py-[98px] rounded-[12px]">
             <img
@@ -27,8 +27,11 @@ const FindPhone = () => {
                 Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper
                 nisi sit elit rhoncus vestibulum fames libero id.
               </p>
-              <a href="#create" class="relative flex px-7 py-[14px] lg:py-4 sm:max-w-[127px] w-full h-[51px] sm:h-[59px] mt-7 rounded-[4px] items-center justify-center overflow-hidden bg-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-lightskyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
-                <span class="relative font-mukta rounded-[4px] capitalize text-base text-darkBlue font-semibold">
+              <a
+                href="#create"
+                class="relative  white_button flex px-7 py-[14px] lg:py-4 sm:max-w-[127px] w-full h-[51px] sm:h-[59px] mt-7 rounded-[4px] items-center justify-center overflow-hidden bg-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-darkBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full"
+              >
+                <span class="relative white_button_text font-mukta rounded-[4px] capitalize text-base text-darkBlue font-semibold">
                   Start Now
                 </span>
               </a>
@@ -36,7 +39,7 @@ const FindPhone = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

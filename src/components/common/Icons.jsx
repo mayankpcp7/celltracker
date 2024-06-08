@@ -807,7 +807,7 @@ export const IndiaFlagIcon = () => {
 };
 export const LocationVector = () => {
   return (
-    <svg
+    <svg className="location"
       width="14"
       height="15"
       viewBox="0 0 14 15"

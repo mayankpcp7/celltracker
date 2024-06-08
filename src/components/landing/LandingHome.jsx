@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import DoubleMobile from "../assets/images/landing/webp/double-mobile-location-tarcking.webp";
+import DoubleMobile from "../../assets/images/landing/webp/double-mobile-location-tarcking.webp";
 import {
-  IndiaFlagIcon,
   LocationLogo,
   LocationVector,
   Logo,
   Logo2,
-} from "./common/Icons";
-import Rightvector from "../assets/images/home/webp/footer-vec.webp";
+} from "../common/Icons";
+import Rightvector from "../../assets/images/home/webp/footer-vec.webp";
 import { Link } from "react-router-dom";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 const LandingHome = () => {
   // navbar
@@ -22,11 +23,20 @@ const LandingHome = () => {
     document.body.classList.remove("overflow-hidden");
   }
 
+  // country code
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [countryCode, setCountryCode] = useState("91");
+
+  const handleOnChange = (value, country) => {
+    setPhoneNumber(value);
+    setCountryCode(country.dialCode);
+  };
+
   return (
-    <div className="bg-landing-sm-hero sm:bg-landing-hero relative z-[1] flex flex-col bg-no-repeat bg-cover bg-center lg:bg-full min-h-[812px] sm:min-h-[800px]">
+    <div className="bg-landing-sm-hero mx-auto max-w-[2500px] sm:bg-landing-hero relative z-[1] flex flex-col bg-no-repeat bg-cover bg-center lg:bg-full min-h-[852px] -mb-6 sm:-mb-0 sm:min-h-[800px]">
       {/* navbar */}
       <nav>
-        <div className="max-w-[1164px] px-6 sm:px-3 mx-auto sm:mt-[27px]">
+        <div className="max-w-[1164px] px-6 sm:px-3 mx-auto md:mt-[27px]">
           <div className="flex justify-between pt-[32px] lg:pt-0 pb-[10px] lg:pb-0  items-center">
             <a href="/" className="relative z-[4]" aria-label="logo">
               {navBar ? <Logo2 /> : <Logo />}
@@ -61,15 +71,15 @@ const LandingHome = () => {
                 </Link>
               </li>
 
-              <button class="relative md:hidden w-full sm:max-w-[98px] flex px-7 py-[14px] lg:py-4 h-[51px] sm:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue text-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-skyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
+              <button class="relative  md:hidden w-full sm:max-w-[98px] flex px-7 py-[14px] lg:py-4 h-[51px] sm:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue text-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-darkBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
                 <span class="relative font-mukta rounded-[4px] capitalize text-base text-white font-normal">
                   Log in
                 </span>
               </button>
             </ul>
 
-            <button className="relative hidden md:flex px-7 py-[14px] mt-[115px] md:mt-0 lg:py-4 sm:max-w-[150px] lg:max-w-[98px] w-full h-[51px] lg:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue md:bg-white text-dark-Blue transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-lightskyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
-              <span className="relative font-mukta whitespace-nowrap rounded-[4px] capitalize text-base text-white md:text-darkBlue font-semibold">
+            <button className="relative white_button hidden md:flex px-7 py-[14px] mt-[115px] md:mt-0 lg:py-4 sm:max-w-[150px] lg:max-w-[98px] w-full h-[51px] lg:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue md:bg-white text-dark-Blue transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-darkBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
+              <span className="relative  white_button_text font-mukta whitespace-nowrap rounded-[4px] capitalize text-base text-white md:text-darkBlue font-semibold">
                 Log in
               </span>
             </button>
@@ -105,54 +115,18 @@ const LandingHome = () => {
                 nunc cursus. Lacus ornare aliquet condimentum elementum
                 elementum nisl nibh sed. Egestas aliquam id quam nunc.
               </p>
-              <div className=" max-lg:mx-auto bg-white rounded flex items-center justify-between ps-2.5 max-w-[448px] mt-6">
-                <div className=" flex items-center gap-[7px] ">
-                  <span>
-                    <IndiaFlagIcon />
-                  </span>
-                  <select
-                    className="outline-none text-sm leading-[23px] font-mukta md:leading-[26px] md:text-base"
-                    name="number"
-                    id="number"
-                  >
-                    <option
-                      value="91"
-                      className="flex font-mukta items-center gap-2 "
-                    >
-                      +91
-                    </option>
-                    <option
-                      value="01"
-                      className="flex font-mukta items-center gap-2 "
-                    >
-                      +01
-                    </option>
-                    <option
-                      value="92"
-                      className="flex font-mukta items-center gap-2 "
-                    >
-                      +92
-                    </option>
-                    <option
-                      value="02"
-                      className="flex font-mukta items-center gap-2 "
-                    >
-                      +02
-                    </option>
-                    <option
-                      value="21"
-                      className="flex font-mukta items-center gap-2 "
-                    >
-                      +21
-                    </option>
-                  </select>
-                </div>
-                <input type="tell" className="outline-none w-[35%] sm:w-1/2" />
-                <button class="relative flex py-[14px] max-w-[107px] sm:max-w-[112px] w-full h-[51px] sm:h-[55px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue text-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-skyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
-                  <span class="relative gap-[5px] items-center flex font-mukta rounded-[4px] capitalize text-base text-white font-normal">
-                    <LocationVector />
-                    Locate
-                  </span>
+              <div className="bg-white rounded shadow-inputNumber max-xl:mx-auto flex  h-[51px] md:h-[55px] items-center justify-between ps-2.5 max-w-[448px] mt-6">
+                <PhoneInput
+                  country={"in"}
+                  value={phoneNumber}
+                  onChange={(phone, country) => handleOnChange(phone, country)}
+                  inputClass="outline-none text-sm leading-[23px] font-mukta md:leading-[26px] md:text-baseoutline-none w-[35%] sm:w-1/2"
+                  containerClass="phone-input-container"
+                  buttonClass="country-code-dropdown "
+                />
+                <button className="hover:border-darkBlue border locate_button border-darkBlue group  hover:text-darkBlue hover:bg-white  bg-darkBlue -me-[1px] rounded font-semibold text-sm md:text-base group text-white py-[14.5px] px-[22.2px] flex items-center gap-1  duration-300 ">
+                  <LocationVector />
+                  Locate
                 </button>
               </div>
             </div>

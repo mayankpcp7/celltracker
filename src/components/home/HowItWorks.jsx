@@ -1,24 +1,24 @@
 import React from "react";
-import { BlueHeading } from "./common/CommonHeading";
-import mobiles from "../assets/images/home/webp/mobile-works.webp";
-import { WorkLocation, AccurateLocation } from "./common/Icons";
-import leftvector from "../assets/images/home/webp/right-vec.webp";
-import rightvector from "../assets/images/home/webp/footer-vec.webp";
+import { BlueHeading } from "../common/CommonHeading";
+import mobiles from "../../assets/images/home/webp/mobile-works.webp";
+import { WorkLocation, AccurateLocation } from "../common/Icons";
+import leftvector from "../../assets/images/home/webp/right-vec.webp";
+import rightvector from "../../assets/images/home/webp/footer-vec.webp";
 
 const HowItWorks = () => {
   return (
-    <>
+    <div className="relative">
+      <img
+        className="absolute start-0 animate-pulse pointer-events-none top-[12%] sm:top-[21%] max-w-[41px] sm:max-w-[106px]"
+        src={leftvector}
+        alt="vector"
+      />
+      <img
+        className="absolute end-0 animate-pulse pointer-events-none  bottom-[-2%] max-w-[41px] sm:max-w-[106px]"
+        src={rightvector}
+        alt="vector"
+      />
       <div className="max-w-[1188px] mx-auto px-6 py-[68px] sm:pt-14 sm:pb-24 md:py-20 lg:pb-12 lg:pt-[104px] relative ">
-        <img
-          className="absolute start-0 animate-pulse pointer-events-none top-[12%] sm:start-[-11%] sm:top-[21%] max-w-[41px] sm:max-w-[106px]"
-          src={leftvector}
-          alt="vector"
-        />
-        <img
-          className="absolute end-0 animate-pulse pointer-events-none sm:end-[-11%] bottom-[-2%] max-w-[41px] sm:max-w-[106px]"
-          src={rightvector}
-          alt="vector"
-        />
         <BlueHeading headingText="How it" boldText="Works" />
         <div className="max-w-[277px] mx-auto sm:max-w-full">
           <BlueHeading SubPera="Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi sit elit rhoncus vestibulum fames libero id." />{" "}
@@ -64,19 +64,19 @@ const HowItWorks = () => {
           </div>
         </div>
         <div className="flex sm:flex-row flex-col  gap-4  mt-10  sm:justify-center sm:items-center">
-          <button class="relative w-full mx-auto sm:mx-0 max-w-[536px] sm:w-[195px] flex px-7 py-[14px] lg:py-4 h-[51px] sm:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue text-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-skyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
-            <span class="relative font-mukta rounded-[4px] whitespace-nowrap capitalize text-base text-white font-semibold">
+          <button class="relative w-full mx-auto locate_button border border-darkBlue sm:mx-0 max-w-[536px] sm:w-[195px] flex px-7 py-[14px] lg:py-4 h-[51px] sm:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue text-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-white before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
+            <span class="relative font-mukta locate rounded-[4px] whitespace-nowrap capitalize text-base text-white font-semibold">
               Create your Account
             </span>
           </button>
-          <button class="relative w-full mx-auto sm:mx-0 max-w-[536px] sm:w-[195px] border border-darkBlue flex px-7 py-[14px] lg:py-4 h-[51px] sm:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-white text-darkBlue transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-lightskyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
-            <span class="relative font-mukta rounded-[4px] capitalize text-base whitespace-nowrap text-darkBlue font-semibold">
+          <button class="relative w-full mx-auto sm:mx-0 white_button max-w-[536px] sm:w-[195px] border border-darkBlue flex px-7 py-[14px] lg:py-4 h-[51px] sm:h-[59px] rounded-[4px] items-center justify-center overflow-hidden bg-white text-darkBlue transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-darkBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
+            <span class="relative font-mukta rounded-[4px] white_button_text capitalize text-base whitespace-nowrap text-darkBlue font-semibold">
               Got more Question?
             </span>
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
