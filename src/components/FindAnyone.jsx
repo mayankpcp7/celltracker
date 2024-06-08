@@ -1,6 +1,6 @@
 import React from 'react'
 import { BlueHeading } from './common/CommonHeading'
-import { DailingMobileIcon, InfiniteIcon, LocationIcon, NotificationIcon, PhoneSettingIcon, RealLoactionIcon } from './common/Icons'
+import { DailingMobileIcon, InfiniteIcon, NotificationIcon, PhoneSettingIcon, RealLoactionIcon } from './common/Icons'
 import IphoneMockup from '../assets/images/landing/webp/iPhone-x-mockup.png'
 import Rightvector from "../assets/images/home/webp/footer-vec.webp";
 

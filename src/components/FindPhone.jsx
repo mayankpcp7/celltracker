@@ -27,11 +27,11 @@ const FindPhone = () => {
                 Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper
                 nisi sit elit rhoncus vestibulum fames libero id.
               </p>
-              <button class="relative flex px-7 py-[14px] lg:py-4 sm:max-w-[127px] w-full h-[51px] sm:h-[59px] mt-7 rounded-[4px] items-center justify-center overflow-hidden bg-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-lightskyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
+              <a href="#create" class="relative flex px-7 py-[14px] lg:py-4 sm:max-w-[127px] w-full h-[51px] sm:h-[59px] mt-7 rounded-[4px] items-center justify-center overflow-hidden bg-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-lightskyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
                 <span class="relative font-mukta rounded-[4px] capitalize text-base text-darkBlue font-semibold">
                   Start Now
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         </div>

@@ -27,7 +27,7 @@ const CreateAccount = () => {
         className=" relative hidden sm:block z-10 w-full -mt-16 sm:-mt-20 lg:-mt-28"
         src={toplayer}
       />
-      <div className="max-w-[1188px] pt-[54px] sm:pt-[30px] lg:pt-[98px] px-6 mx-auto relative">
+      <div className="max-w-[1188px] pt-[54px] sm:pt-[30px] lg:pt-[98px] px-6 mx-auto relative"id="create">
         <img
           className="max-w-[41px] sm:max-w-[106px] pointer-events-none end-0 -z-0 bottom-[-6%] md:bottom-[13%] absolute md:end-[-10%]"
           src={leftvec}

@@ -26,7 +26,7 @@ const LandingHome = () => {
     <div className="bg-landing-sm-hero sm:bg-landing-hero relative z-[1] flex flex-col bg-no-repeat bg-cover bg-center lg:bg-full min-h-[812px] sm:min-h-[800px]">
       {/* navbar */}
       <nav>
-        <div className="max-w-[1164px] px-6 sm:px-3 mx-auto sm:mt-[7px]">
+        <div className="max-w-[1164px] px-6 sm:px-3 mx-auto sm:mt-[27px]">
           <div className="flex justify-between pt-[32px] lg:pt-0 pb-[10px] lg:pb-0  items-center">
             <a href="/" className="relative z-[4]" aria-label="logo">
               {navBar ? <Logo2 /> : <Logo />}
@@ -164,12 +164,7 @@ const LandingHome = () => {
                 <div className=" absolute overflow-hidden !z-[2] bg-white -bottom-4 md:bottom-[80px] h-[165px] sm:h-[189px] right-0 xl:right-[-42px]  bg-light-sky-gradient rounded-xl shadow-[0px_9px_13.9px_0_#0000001C]">
                   <div className="relative z-[1] md:p-[16px_16px_12px_14px] p-2">
                     <div className="flex items-center gap-[6px] lg:gap-3">
-                     <button class="relative flex py-[14px] max-w-[107px] sm:max-w-[112px] w-full h-[51px] sm:h-[55px] rounded-[4px] items-center justify-center overflow-hidden bg-darkBlue text-white transition-all before:absolute before:h-0 before:w-0 b before:rounded-[4px] before:bg-skyBlue before:duration-300 before:ease-out hover:before:h-[60px] hover:before:w-full">
-                  <span class="relative gap-[5px] items-center flex font-mukta rounded-[4px] capitalize text-base text-white font-normal">
-                    <LocationVector />
-                    Locate
-                  </span>
-                </button>
+                     <LocationLogo/>
                       <p className="text-lg lg:text-xl z-50 font-mukta relative leading-[30px] lg:leading-[33px] font-normal text-darkBlue">
                         Geolocation found!
                       </p>
