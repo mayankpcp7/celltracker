@@ -93,7 +93,7 @@ const Hero = () => {
         <div className="max-w-[1164px] mb-0 xs:mb-12 lg:mb-16 w-full px-6 mx-auto">
           <div className="flex flex-row flex-wrap -mx-3">
             <div className="lg:w-1/2 w-full px-3 lg:mt-[71px]">
-              <h1 className="text-white text-start text-[32px] sm:text-5xl lg:text-[52px] xl:text-[64px]  leading-full font-extrabold font-mukta max-lg:text-center max-lg:mx-auto md:max-w-[520px]">
+              <h1 className="text-white text-start text-[32px] sm:text-5xl lg:text-[52px] xl:text-[64px] max-w-[326px] xs:max-w-[520px]  leading-full font-extrabold font-mukta max-lg:text-center max-lg:mx-auto md:max-w-[520px]">
                 Find the location
                 <span className="font-light"> of any phone by its number</span>
               </h1>
