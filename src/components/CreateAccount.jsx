@@ -39,10 +39,12 @@ const CreateAccount = () => {
           alt="vector"
         />
         <BlueHeading headingText="Create your" boldText="Account" />
-        <BlueHeading
-          className="text-sm sm:text-base"
-          SubPera="Join now and protect your family's phones"
-        />
+        <div className="mt-[-6px]">
+          <BlueHeading
+            className="text-sm sm:text-base"
+            SubPera="Join now and protect your family's phones"
+          />
+        </div>
         <div className="flex md:flex-row flex-col relative z-20 mt-8 sm:mt-[52px] lg:mt-[72px] items-start md:items-center">
           <div className="flex flex-col">
             <h3 className="text-darkBlue font-mukta text-2xl sm:text-[32px] leading-sm font-light">

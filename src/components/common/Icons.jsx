@@ -910,7 +910,7 @@ export const Headphone = () => {
 // ------------------------------------------------------- how its works ------------------------------------------
 export const WorkLocation = () => {
   return (
-    <svg
+    <svg className="sm:max-w-[48px] max-w-[38px]"
       width="48"
       height="41"
       viewBox="0 0 48 41"
@@ -953,7 +953,7 @@ export const WorkLocation = () => {
 
 export const AccurateLocation = () => {
   return (
-    <svg
+    <svg className="sm:max-w-[48px] max-w-[38px] "
       width="48"
       height="41"
       viewBox="0 0 48 41"
@@ -1151,7 +1151,7 @@ export const SimpleUse = () => {
 export const BackArrow = () => {
   return (
     <svg
-      className="fixed animate-bounce z-[49] lg:max-w-[60px] md:max-w-[50px] max-w-[45px] bottom-4 end-4 cursor-pointer"
+      className="fixed animate-bounce z-[49] lg:max-w-[55px] md:max-w-[50px] max-w-[45px] bottom-4 end-4 cursor-pointer"
       width="84"
       height="84"
       viewBox="0 0 84 84"

@@ -18,9 +18,9 @@ const Advantage = () => {
         src={layer}
         alt="layer"
       />
-      <div className="max-w-[1188px] mt-16 z-[70] px-6 mx-auto relative">
+      <div className="max-w-[1188px] mt-10 z-[70] px-6 mx-auto relative">
         <img
-          className="absolute z-0 start-[-10.5%] animate-pulse pointer-events-none sm:max-w-[106px] max-w-[41px] top-[8%]"
+          className="absolute z-0 start-[-1%] top-[-4%] sm:start-[-10.5%] animate-pulse pointer-events-none sm:max-w-[106px] max-w-[41px] sm:top-[8%]"
           src={rightvector}
           alt="vector"
         />
@@ -46,7 +46,7 @@ const Advantage = () => {
               <h4 className="font-mukta text-xl sm:text-2xl text-darkBlue pt-1 leading-sm font-normal sm:max-w-[231px]">
                 {advantage.title}
               </h4>
-              <p className="text-lightBlack font-mukta font-normal text-sm sm:text-base leading-md pt-4 sm:pt-[6px] sm:max-w-[231px]">
+              <p className="text-lightBlack font-mukta font-normal text-sm sm:text-base leading-md pt-1 sm:pt-[6px] sm:max-w-[231px]">
                 {advantage.description}
               </p>
             </div>

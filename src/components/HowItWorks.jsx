@@ -26,7 +26,7 @@ const HowItWorks = () => {
         <div className="flex flex-row gap-8 lg:gap-0 items-center justify-center flex-wrap mt-8">
           <div className="lg:w-6/12 w-full sm:w-11/12">
             <img
-              className="max-w-[441px] sm:max-w-[580px] -mt-4 xs:mt-0 -ms-12 xs:mx-auto xl:max-w-[729px]  lg:-translate-x-8 xl:-translate-x-28"
+              className="max-w-[441px] sm:max-w-[580px] -mb-4 xs:mb-0 -mt-4 xs:mt-0 -ms-12 xs:mx-auto xl:max-w-[729px]  lg:-translate-x-8 xl:-translate-x-28"
               src={mobiles}
               alt="mobiles"
             />
